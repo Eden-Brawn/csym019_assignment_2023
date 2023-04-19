@@ -1,6 +1,15 @@
 {
     "courses": [
         {
+            "ID": "",
+            "course": "",
+            "ucascode": "",
+            "level": "",
+            "starting": "",
+            "duration": {
+                "fulltime": "",
+                "parttime": ""
+            }
             
         }
     ]
