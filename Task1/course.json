@@ -1,7 +1,7 @@
 {
     "courses": [
         {
-            "ID": "",
+            "id": "",
             "course": "",
             "ucascode": "",
             "level": "",
@@ -9,8 +9,28 @@
             "duration": {
                 "fulltime": "",
                 "parttime": ""
-            }
+            },
+            "fees": {
+                "ukfees": {
+                    "fulltime": "",
+                    "parttime": ""
+                },
+                "internationalfees": ""
+            },
+            "location": "",
+            "contact": {
+                "uk/eustudents": {
+                    "email": "",
+                    "phone": ""
+                },
+                "internationalstudents": {
+                    "email": "",
+                    "phone": ""
+                },
+                
             
+            }
+
         }
     ]
 }
