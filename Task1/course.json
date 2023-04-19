@@ -20,12 +20,13 @@
                 "internationalfees": {
                     "fulltime": "£14,750",
                     "integratedfoundationyear": "£14,750"
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "study@northamptin.ac.uk",
+                    "email": "study@northampton.ac.uk",
                     "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
@@ -49,6 +50,55 @@
             "studentsstatifiedwithcourse": "55%"
         },
         {
+            "id": "2",
+            "course": "Accounting and Finance BSc (Hons)",
+            "ucascode": "N420",
+            "level": "Undergraduate",
+            "starting": "Starting",
+            "duration": {
+                "fulltime": "3 Years",
+                "parttime": "4 - 6 Years",
+                "fulltimefoundation": "N/A"
+            },
+            "fees": {
+                "ukfees": {
+                    "fulltime": "£9,250",
+                    "parttime": "£1,540 per 20 credit module",
+                    "integratedfoundationyear": "N/A"
+                },
+                "internationalfees": {
+                    "fulltime": "£14,750",
+                    "integratedfoundationyear": "N/A"
+                },
+                "optionalworkplacementyear": "£1,200"
+            },
+            "location": "Waterside",
+            "contact": {
+                "uk/eustudents": {
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
+                },
+                "internationalstudents": {
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
+                }
+            },
+            "entryrequirements": {
+                "standard": {
+                    "alevel": "BBC",
+                    "btec": "DDM",
+                    "tlevel": "M"
+                },
+                "integratedfoundationyear": {
+                    "alevel": "N/A",
+                    "btec": "N/A",
+                    "tlevel": "N/A"
+                },
+                "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
+            },
+            "studentsstatifiedwithcourse": "85%"
+        },
+        {
             "id": "",
             "course": "",
             "ucascode": "",
@@ -68,7 +118,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -116,7 +167,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -164,7 +216,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -212,7 +265,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -260,7 +314,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -308,7 +363,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -356,7 +412,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -404,7 +461,8 @@
                 "internationalfees": {
                     "fulltime": "",
                     "integratedfoundationyear": ""
-                }
+                },
+                "optionalworkplacementyear": ""
             },
             "location": "",
             "contact": {
@@ -431,54 +489,6 @@
                 "englishlanguagerequirements": ""
             },
             "studentsstatifiedwithcourse": ""
-        },
-        {
-            "id": "",
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
-            "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
-            },
-            "fees": {
-                "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
-                },
-                "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
-                }
-            },
-            "location": "",
-            "contact": {
-                "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
-                },
-                "internationalstudents": {
-                    "email": "",
-                    "phone": ""
-                }
-            },
-            "entryrequirements": {
-                "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "englishlanguagerequirements": ""
-            },
-            "studentsstatifiedwithcourse": ""
-        },
+        }
     ]
 }
