@@ -8,14 +8,19 @@
             "starting": "",
             "duration": {
                 "fulltime": "",
-                "parttime": ""
+                "parttime": "",
+                "fulltimefoundation": ""
             },
             "fees": {
                 "ukfees": {
                     "fulltime": "",
-                    "parttime": ""
+                    "parttime": "",
+                    "integratedfoundationyear": ""
                 },
-                "internationalfees": ""
+                "internationalfees": {
+                    "fulltime": "",
+                    "integratedfoundationyear": ""
+                }
             },
             "location": "",
             "contact": {
@@ -26,11 +31,22 @@
                 "internationalstudents": {
                     "email": "",
                     "phone": ""
+                }
+            },
+            "entryrequirements": {
+                "standard": {
+                    "alevel": "",
+                    "btec": "",
+                    "tlevel": ""
                 },
-                
-            
-            }
-
+                "integratedfoundationyear": {
+                    "alevel": "",
+                    "btec": "",
+                    "tlevel": ""
+                },
+                "englishlanguagerequirements": ""
+            },
+            "studentsstatifiedwithcourse": ""
         }
     ]
 }
