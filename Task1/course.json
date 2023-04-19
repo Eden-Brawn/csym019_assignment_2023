@@ -1,52 +1,52 @@
 {
     "courses": [
         {
-            "id": "",
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "id": "1",
+            "course": "Business Computing BSc (Hons)",
+            "ucascode": "G503",
+            "level": "Undergraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "3 years",
+                "parttime": "4 -6 years",
+                "fulltimefoundation": "4 years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": "£9,250",
+                    "parttime": "£1,540 per 20 credit module",
+                    "integratedfoundationyear": "£9,250"
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": "£14,750",
+                    "integratedfoundationyear": "£14,750"
                 }
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northamptin.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
                 }
             },
             "entryrequirements": {
                 "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
+                    "alevel": "BCC",
+                    "btec": "DMM",
+                    "tlevel": "Pass"
                 },
                 "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
+                    "alevel": "DEE",
+                    "btec": "MPP",
+                    "tlevel": "Pass"
                 },
-                "englishlanguagerequirements": ""
+                "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
             },
-            "studentsstatifiedwithcourse": ""
+            "studentsstatifiedwithcourse": "55%"
         },
         {
             "id": "",
