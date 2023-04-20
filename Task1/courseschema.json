@@ -7,7 +7,14 @@
             "courses": {
                 "type": "array",
                 "items": {
-                    
+                    "type": "object",
+                    "properties": {
+                        "id": {},
+                        "course": {},
+                        "ucascode": {},
+                        "level": {},
+                        "starting": {},
+                    }
                 }
             }
         }
