@@ -35,9 +35,24 @@
                                         "integratedfoundationyear": {"type": "integer"}
                                     }},
                                 "optionalworkplacementyear": {"type": "integer"}
-                            }
-                                
-                        }
+                            }},
+                        "location": {"type": "string"},
+                        "contact": {"type": "object",
+                            "properties": {
+                                "ukfees": {"type": "object",
+                                    "properties": {
+                                        "fulltime": {"type": "integer"},
+                                        "parttime": {"type": "integer"},
+                                        "integratedfoundationyear": {"type": "integer"}
+                                    }},
+                                "internationalfees": {"type": "object",
+                                    "properties": {
+                                        "fulltime": {"type": "integer"},
+                                        "parttime": {"type": "integer"},
+                                        "integratedfoundationyear": {"type": "integer"}
+                                    }},
+                                "optionalworkplacementyear": {"type": "integer"}
+                            }},
                     }
                 }
             }
