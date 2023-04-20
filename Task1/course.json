@@ -1,7 +1,7 @@
 {
     "courses": [
         {
-            "id": "1",
+            "id": 1,
             "course": "Business Computing BSc (Hons)",
             "ucascode": "G503",
             "level": "Undergraduate",
@@ -13,15 +13,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "£9,250",
-                    "parttime": "£1,540 per 20 credit module",
-                    "integratedfoundationyear": "£9,250"
+                    "fulltime": 9250,
+                    "parttime": 1540,
+                    "integratedfoundationyear": 9250
                 },
                 "internationalfees": {
-                    "fulltime": "£14,750",
-                    "integratedfoundationyear": "£14,750"
+                    "fulltime": 14750,
+                    "integratedfoundationyear": 14750
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": null
             },
             "location": "Waterside",
             "contact": {
@@ -50,7 +50,7 @@
             "studentsstatifiedwithcourse": "55%"
         },
         {
-            "id": "2",
+            "id": 2,
             "course": "Accounting and Finance BSc (Hons)",
             "ucascode": "N420",
             "level": "Undergraduate",
@@ -62,15 +62,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "£9,250",
-                    "parttime": "£1,540 per 20 credit module",
-                    "integratedfoundationyear": "N/A"
+                    "fulltime": 9250,
+                    "parttime": 1540,
+                    "integratedfoundationyear": null
                 },
                 "internationalfees": {
-                    "fulltime": "£14,750",
-                    "integratedfoundationyear": "N/A"
+                    "fulltime": 14750,
+                    "integratedfoundationyear": null
                 },
-                "optionalworkplacementyear": "£1,200"
+                "optionalworkplacementyear": 1200
             },
             "location": "Waterside",
             "contact": {
@@ -99,7 +99,7 @@
             "studentsstatifiedwithcourse": "85%"
         },
         {
-            "id": "",
+            "id": 3,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -111,15 +111,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -148,7 +148,7 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 4,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -160,15 +160,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -197,27 +197,27 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 5,
             "course": "",
             "ucascode": "",
             "level": "",
             "starting": "",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": ,
+                "parttime": ,
+                "fulltimefoundation": 
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
+                    "fulltime": ,
+                    "parttime": ,
                     "integratedfoundationyear": ""
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -246,7 +246,7 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 6,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -258,15 +258,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -295,7 +295,7 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 7,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -307,15 +307,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -344,7 +344,7 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 8,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -356,15 +356,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -393,7 +393,7 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 9,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -405,15 +405,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
@@ -442,7 +442,7 @@
             "studentsstatifiedwithcourse": ""
         },
         {
-            "id": "",
+            "id": 10,
             "course": "",
             "ucascode": "",
             "level": "",
@@ -454,15 +454,15 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": "",
-                    "parttime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "parttime": ,
+                    "integratedfoundationyear": 
                 },
                 "internationalfees": {
-                    "fulltime": "",
-                    "integratedfoundationyear": ""
+                    "fulltime": ,
+                    "integratedfoundationyear": 
                 },
-                "optionalworkplacementyear": ""
+                "optionalworkplacementyear": 
             },
             "location": "",
             "contact": {
