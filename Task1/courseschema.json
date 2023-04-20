@@ -39,20 +39,34 @@
                         "location": {"type": "string"},
                         "contact": {"type": "object",
                             "properties": {
-                                "ukfees": {"type": "object",
+                                "uk/eustudents": {"type": "object",
                                     "properties": {
-                                        "fulltime": {"type": "integer"},
-                                        "parttime": {"type": "integer"},
-                                        "integratedfoundationyear": {"type": "integer"}
+                                        "email": {"type": "string"},
+                                        "phone": {"type": "string"}
                                     }},
-                                "internationalfees": {"type": "object",
+                                "internationalstudents": {"type": "object",
                                     "properties": {
-                                        "fulltime": {"type": "integer"},
-                                        "parttime": {"type": "integer"},
-                                        "integratedfoundationyear": {"type": "integer"}
-                                    }},
-                                "optionalworkplacementyear": {"type": "integer"}
+                                        "email": {"type": "string"},
+                                        "phone": {"type": "string"}
+                                    }}
                             }},
+                        "entryrequirements": {"type": "object",
+                            "properties": {
+                                "standard": {"type": "object",
+                                    "properties": {
+                                        "alevel": {"type": "string"},
+                                        "btec": {"type": "string"},
+                                        "tlevel": {"type": "string"}
+                                    }},
+                                "integratedfoundationyear": {"type": "object",
+                                    "properties": {
+                                        "alevel": {"type": "string"},
+                                        "btec": {"type": "string"},
+                                        "tlevel": {"type": "string"}
+                                    }},
+                                "englishlanguagerequirements": {"type": "string"}
+                            }},
+                        "studentsstatifiedwithcourse": {"type": "string"}
                     }
                 }
             }
