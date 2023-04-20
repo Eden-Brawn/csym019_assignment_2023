@@ -11,16 +11,24 @@
                     "properties": {
                         "id": {"type": "integer"},
                         "course": {"type": "string"},
-                        "ucascode": {},
-                        "level": {},
-                        "starting": {},
+                        "ucascode": {"type": "string"},
+                        "level": {"type": "string"},
+                        "starting": {"type": "string"},
                         "duration": {"type": "object",
                             "properties": {
                                 "fulltime": {"type": "string"},
                                 "parttime": {"type": "string"},
                                 "fulltimefoundation": {"type": "string"}
                             }},
-                        
+                        "fees": {"type": "object",
+                            "properties": {
+                                "ukfees": {"type": "object",
+                                    "properties": {
+                                        
+                                    }},
+                                "internationalfees": {"type": "object"},
+                                "optionalworkplacementyear": {"type": "integer"}
+                            }},
                     }
                 }
             }
