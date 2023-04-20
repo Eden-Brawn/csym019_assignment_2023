@@ -1,3 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema",
+        "title": "Courses List",
+        "description": "List of courses that can be taken at the University of Northampton",
+        "type": "object",
+        "properties": {
+            "courses": {
+                "type": "array",
+                "items": {
+                    
+                }
+            }
+        }
 }
