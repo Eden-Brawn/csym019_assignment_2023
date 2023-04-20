@@ -24,13 +24,23 @@
                             "properties": {
                                 "ukfees": {"type": "object",
                                     "properties": {
-                                        
+                                        "fulltime": {"type": "integer"},
+                                        "parttime": {"type": "integer"},
+                                        "integratedfoundationyear": {"type": "integer"}
                                     }},
-                                "internationalfees": {"type": "object"},
+                                "internationalfees": {"type": "object",
+                                    "properties": {
+                                        "fulltime": {"type": "integer"},
+                                        "parttime": {"type": "integer"},
+                                        "integratedfoundationyear": {"type": "integer"}
+                                    }},
                                 "optionalworkplacementyear": {"type": "integer"}
-                            }},
+                            }
+                                
+                        }
                     }
                 }
             }
         }
+        
 }
