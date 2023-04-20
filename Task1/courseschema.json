@@ -9,11 +9,18 @@
                 "items": {
                     "type": "object",
                     "properties": {
-                        "id": {},
-                        "course": {},
+                        "id": {"type": "integer"},
+                        "course": {"type": "string"},
                         "ucascode": {},
                         "level": {},
                         "starting": {},
+                        "duration": {"type": "object",
+                            "properties": {
+                                "fulltime": {"type": "string"},
+                                "parttime": {"type": "string"},
+                                "fulltimefoundation": {"type": "string"}
+                            }},
+                        
                     }
                 }
             }
