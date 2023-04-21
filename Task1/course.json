@@ -7,9 +7,9 @@
             "level": "Undergraduate",
             "starting": "September",
             "duration": {
-                "fulltime": "3 years",
-                "parttime": "4 -6 years",
-                "fulltimefoundation": "4 years"
+                "fulltime": "3 Years",
+                "parttime": "4 -6 Years",
+                "fulltimefoundation": "4 Years"
             },
             "fees": {
                 "ukfees": {
@@ -100,101 +100,101 @@
         },
         {
             "id": 3,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "Advertising & Digital Marketing BA (Hons)",
+            "ucascode": "N564",
+            "level": "Undergraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "3 Years",
+                "parttime": "4 Years",
+                "fulltimefoundation": "4 Years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 9250,
+                    "parttime": 1540,
+                    "integratedfoundationyear": 9250
                 },
                 "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 14750,
+                    "integratedfoundationyear": 14750
                 },
-                "optionalworkplacementyear": 
+                "optionalworkplacementyear": 1100
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
                 }
             },
             "entryrequirements": {
                 "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
+                    "alevel": "BCC",
+                    "btec": "DMM",
+                    "tlevel": "Pass"
                 },
                 "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
+                    "alevel": "DEE",
+                    "btec": "MPP",
+                    "tlevel": "Pass"
                 },
-                "englishlanguagerequirements": ""
+                "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
             },
-            "studentsstatifiedwithcourse": ""
+            "studentsstatifiedwithcourse": "83%"
         },
         {
             "id": 4,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "Architectural Technology BSc (Hons)",
+            "ucascode": "K210",
+            "level": "Undergraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "3 Years",
+                "parttime": "4 - 6 Years",
+                "fulltimefoundation": "4 Years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 9250,
+                    "parttime": 1540,
+                    "integratedfoundationyear": 9250
                 },
                 "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 14750,
+                    "integratedfoundationyear": 14750
                 },
-                "optionalworkplacementyear": 
+                "optionalworkplacementyear": null
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
                 }
             },
             "entryrequirements": {
                 "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
+                    "alevel": "BCC",
+                    "btec": "DMM",
+                    "tlevel": "Pass"
                 },
                 "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
+                    "alevel": "DEE",
+                    "btec": "MPP",
+                    "tlevel": "Pass"
                 },
-                "englishlanguagerequirements": ""
+                "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
             },
-            "studentsstatifiedwithcourse": ""
+            "studentsstatifiedwithcourse": "33%"
         },
         {
             "id": 5,
