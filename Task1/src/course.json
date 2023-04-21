@@ -247,52 +247,40 @@
         },
         {
             "id": 6,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "Human Resource Management MA",
+            "level": "Postgraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "1 Year",
+                "parttime": "2 Year"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 8010,
+                    "parttime": {
+                        "Year One": 2670,
+                        "Year Two": 5340
+                    }
                 },
                 "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
-                },
-                "optionalworkplacementyear": 
+                    "fulltime": 16500
+                }
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
                 }
             },
             "entryrequirements": {
-                "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "englishlanguagerequirements": ""
-            },
-            "studentsstatifiedwithcourse": ""
+                "standard": "First or Second Class Honours degree from a UK University (or an international equivalent) in human resource management, or in business, commerce, management or related disciplines.",
+                "englishlanguagerequirements": "Minimum standard: IELTS 6.5 (or equivalent) for study at postgraduate level."
+            }
         },
         {
             "id": 7,
