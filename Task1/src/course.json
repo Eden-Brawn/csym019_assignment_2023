@@ -284,199 +284,131 @@
         },
         {
             "id": 7,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "History MA",
+            "level": "Postgraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "1 Year",
+                "parttime": "2 Years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 8010,
+                    "parttime": 1335
                 },
                 "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
-                },
-                "optionalworkplacementyear": 
+                    "fulltime": 7650,
+                    "parttime": 1275
+                }
             },
-            "location": "",
+            "location": "Distance Learning",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893881"
                 }
             },
             "entryrequirements": {
-                "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "englishlanguagerequirements": ""
-            },
-            "studentsstatifiedwithcourse": ""
+                "standard": "Second class degree in History or related discipline.",
+                "englishlanguagerequirements": "IELTS 7.0 (or equivalent)"
+            }
         },
         {
             "id": 8,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "Project Management MSc",
+            "level": "Postgraduate",
+            "starting": "January/nJune/nSeptember",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "1 Year",
+                "fulltimeplacementyear": "2 Years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 8010
                 },
                 "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 16500 
                 },
-                "optionalworkplacementyear": 
+                "optionalworkplacementyear": 1000
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
                 }
             },
             "entryrequirements": {
-                "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "englishlanguagerequirements": ""
-            },
-            "studentsstatifiedwithcourse": ""
+                "standard": "First or second class honours degree (or equivalent)",
+                "englishlanguagerequirements": "IELTS 6.5 overall with a minimum of 6.0 in writing and 5.5 in all other skills."
+            }
         },
         {
             "id": 9,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "Strength and Conditioning MSc",
+            "level": "Postgraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "fulltime": "1 Year",
+                "parttime": "2 Years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
+                    "fulltime": 8010,
+                    "parttime": 890
                 },
                 "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
-                },
-                "optionalworkplacementyear": 
+                    "fulltime": 16500
+                }
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 },
                 "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "international@northampton.ac.uk",
+                    "phone": "+44 (0)1604 893981"
                 }
             },
             "entryrequirements": {
-                "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "englishlanguagerequirements": ""
-            },
-            "studentsstatifiedwithcourse": ""
+                "standard": "2:2 honours degree in a relevant subject area.",
+                "englishlanguagerequirements": "IELTS 6.5 (or equivalent) with a minimum of 5.5 in all bands"
+            }
         },
         {
             "id": 10,
-            "course": "",
-            "ucascode": "",
-            "level": "",
-            "starting": "",
+            "course": "Counselling MSc",
+            "level": "Postgraduate",
+            "starting": "September",
             "duration": {
-                "fulltime": "",
-                "parttime": "",
-                "fulltimefoundation": ""
+                "parttime": "2 Years"
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": ,
-                    "parttime": ,
-                    "integratedfoundationyear": 
-                },
-                "internationalfees": {
-                    "fulltime": ,
-                    "integratedfoundationyear": 
-                },
-                "optionalworkplacementyear": 
+                    "parttime": 4005
+                }
             },
-            "location": "",
+            "location": "Waterside",
             "contact": {
                 "uk/eustudents": {
-                    "email": "",
-                    "phone": ""
-                },
-                "internationalstudents": {
-                    "email": "",
-                    "phone": ""
+                    "email": "study@northampton.ac.uk",
+                    "phone": "0300 303 2772"
                 }
             },
             "entryrequirements": {
-                "standard": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "integratedfoundationyear": {
-                    "alevel": "",
-                    "btec": "",
-                    "tlevel": ""
-                },
-                "englishlanguagerequirements": ""
-            },
-            "studentsstatifiedwithcourse": ""
+                "standard": "first or second class bachelors degree.",
+                "englishlanguagerequirements": "IELTS 6.5 overall (or equivalent)"
+            }
         }
     ]
 }
