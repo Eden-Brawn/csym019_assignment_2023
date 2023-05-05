@@ -31,6 +31,7 @@ function showContents() {
             let txt = "";
             for (let i=0; i < data.courses.length; i++) {
                 txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
+                txt += "<tr><td>" + data.courses[i].ucascode + "</td></tr>";
             }
             document.getElementById("course").innerHTML = txt;
         }
