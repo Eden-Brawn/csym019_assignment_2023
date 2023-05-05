@@ -29,10 +29,10 @@ function showContents() {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);
             let txt = "";
-            for (let i=0; i < data.counties.length; i++) {
-                txt += "<tr><td>" + data.counties[i].name + "</td></tr>";
+            for (let i=0; i < data.courses.length; i++) {
+                txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
             }
-            document.getElementById("countylist").innerHTML = txt;
+            document.getElementById("course").innerHTML = txt;
         }
         else {
             document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
