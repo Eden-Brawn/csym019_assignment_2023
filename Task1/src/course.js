@@ -31,7 +31,9 @@ function showContents() {
             let undergrad = "";
             let postgrad = "";
             for (let i=0; i < data.courses.length; i++) {
-                undergrad += "<tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode  + "</td>" + "<td>" + data.courses[i].starting + "</td>" + "</tr>";
+                if (data.courses.level == "Undergraduate"){
+                    undergrad += "<tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode  + "</td>" + "<td>" + data.courses[i].starting + "</td>" + "</tr>";
+                }
             }
             document.getElementById("undergraduate").innerHTML = undergrad;
             document.getElementById("postgraduate").innerHTML = postgrad;
