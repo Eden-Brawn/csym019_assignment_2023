@@ -29,12 +29,17 @@ function showContents() {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);
             let txt = "";
+            let txt2 = "";
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
                     txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
                 }
+                if(data.courses[i].level == "Postgraduate"){
+                    txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
+                }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
+            document.getElementById("postgradcourse").innerHTML = txt2;
         }
         else {
             document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
