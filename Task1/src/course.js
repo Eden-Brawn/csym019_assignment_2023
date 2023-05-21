@@ -33,7 +33,8 @@ function showContents() {
             for (let i=0; i < data.courses.length; i++) {
                 undergrad += "<tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode  + "</td>" + "<td>" + data.courses[i].starting + "</td>" + "</tr>";
             }
-            document.getElementById("course").innerHTML = undergrad;
+            document.getElementById("undergraduate").innerHTML = undergrad;
+            document.getElementById("postgraduate").innerHTML = postgrad;
         }
         else {
             document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
