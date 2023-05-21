@@ -28,14 +28,14 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);
-            let txt = "<tr><th>Undergraduate</th>";
-            let txt2 = "<tr><th>Postgraduate</th>";
+            let txt = "<tr><th>Undergraduate</th></tr>";
+            let txt2 = "<tr><th>Postgraduate</th></tr>";
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
-                    txt += "<td>" + data.courses[i].course + "</td></tr>";
+                    txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
-                    txt2 += "<td>" + data.courses[i].course + "</td></tr>";
+                    txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
                 }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
