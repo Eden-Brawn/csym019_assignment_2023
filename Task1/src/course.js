@@ -28,8 +28,8 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);
-            let txt = "<tr><th>Undergraduate</th></tr>";
-            let txt2 = "<tr><th>Postgraduate</th></tr>";
+            let txt = "<tr><th>Course</th></tr>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+            let txt2 = "<tr><th>Course</th></tr>";
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
                     txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
