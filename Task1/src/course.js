@@ -28,11 +28,12 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);
-            let txt = "";
+            let undergrad = "";
+            let postgrad = "";
             for (let i=0; i < data.courses.length; i++) {
-                txt += "<tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode  + "</td>" + "<td>" + data.courses[i].starting + "</td>" + "</tr>";
+                undergrad += "<tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode  + "</td>" + "<td>" + data.courses[i].starting + "</td>" + "</tr>";
             }
-            document.getElementById("course").innerHTML = txt;
+            document.getElementById("course").innerHTML = undergrad;
         }
         else {
             document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
