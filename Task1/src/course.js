@@ -32,7 +32,7 @@ function showContents() {
             for (let i=0; i < data.courses.length; i++) {
                 txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
             }
-            document.getElementById("course").innerHTML = txt;
+            document.getElementById("undergradcourse").innerHTML = txt;
         }
         else {
             document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
