@@ -30,7 +30,9 @@ function showContents() {
             let data = JSON.parse(xhr.responseText);
             let txt = "";
             for (let i=0; i < data.courses.length; i++) {
-                txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
+                if(data.courses[i].level == "Undergraduate"){
+                    txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
+                }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
         }
