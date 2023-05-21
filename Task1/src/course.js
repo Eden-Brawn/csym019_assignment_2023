@@ -1,7 +1,7 @@
 //$(document).ready(function(){
 //    $("#course").load("course.html");
 //});
-
+//REFERECE WHERE DATA CAME FROM
 window.onload = makeAjaxRequest;
 
 function makeAjaxRequest() {
@@ -28,11 +28,11 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);
-            let txt = "<tr><th>Course</th></tr>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+            let txt = "<tr><th>Course</th><th>UCAS Code</th></tr>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
             let txt2 = "<tr><th>Course</th></tr>";
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
-                    txt += "<tr><td>" + data.courses[i].course + "</td></tr>";
+                    txt += "<tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" + "</tr>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
                     txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
