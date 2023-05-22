@@ -37,7 +37,7 @@ function showContents() {
             "<th colspan=\"2\">International Fees</th>" +
             "<tr><th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
-            "<th scope=\"col\">Foundation</th></tr>"+
+            "<th scope=\"col\">Foundation</th>"+
             "<th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
             "<th scope=\"col\">Foundation</th>"+
