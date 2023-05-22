@@ -40,7 +40,7 @@ function showContents() {
             "<th scope=\"col\">Part Time</th>" + 
             "<th scope=\"col\">Foundation</th>"+
             "<th scope=\"col\">Full Time</th>" + 
-            "<th scope=\"col\">Part Time</th>" + 
+            "<th scope=\"col\">Part Time</th>" + // table order came from https://www.w3.org/WAI/tutorials/tables/irregular/
             "<th scope=\"col\">Foundation</th>"+
             "<th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Foundation</th></tr>"+
