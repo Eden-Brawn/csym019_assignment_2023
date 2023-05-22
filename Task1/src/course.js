@@ -36,6 +36,13 @@ function showContents() {
             "<tr><th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
             "<th scope=\"col\">Foundation</th></tr>"+
+            "<th colspan=\"3\">UK Fees</th>" +
+            "<tr><th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Part Time</th>" + 
+            "<th scope=\"col\">Foundation</th></tr>"+
+            "<th colspan=\"3\">International Fees</th>" +
+            "<tr><th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Foundation</th></tr>"+
             "</tr></thead>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
             let txt2 = "<tr><th>Course</th></tr>"; 
             for (let i=0; i < data.courses.length; i++) {
@@ -43,7 +50,10 @@ function showContents() {
                     txt += "<tbody><tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
                     + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + 
                     data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + 
-                    "<td>" +  + "</td>" + "</tr></tbody>";
+                    "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>" + 
+                    "<td>" + data.courses[i].fees.ukfees.integratedfoundationyear + "</td>" + 
+                    "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.integratedfoundationyear + "</td>" + 
+                    "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
                     txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
