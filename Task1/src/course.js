@@ -35,6 +35,7 @@ function showContents() {
             "<th colspan=\"3\">Duration</th>"+
             "<th colspan=\"3\">UK Fees</th>" +
             "<th colspan=\"2\">International Fees</th>" +
+            "<th rowspan=\"2\">Location</th>" + 
             "<tr><th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
             "<th scope=\"col\">Foundation</th>"+
@@ -53,7 +54,7 @@ function showContents() {
                     "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>" + 
                     "<td>" + data.courses[i].fees.ukfees.integratedfoundationyear + "</td>" + 
                     "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.integratedfoundationyear + "</td>" + 
-                    "</tr></tbody>";
+                    "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
                     txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
