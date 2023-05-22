@@ -28,12 +28,17 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);//thead, tbody adn sub headings https://stackoverflow.com/questions/22702825/create-a-table-with-sub-headings-and-side-headings
-            let txt = "<col><col><col><colgroup span=\"4\"></colgroup><thead><tr><th tr rowspan=\"2\">Course</th><th rowspan=\"2\">UCAS Code</th><th rowspan=\"2\">Starting Month</th><th colspan=\"3\">Duration<tr><th scope=\"col\">Full Time</th><th scope=\"col\">Part Time</th><th scope=\"col\">Foundation</th></tr></th></tr></thead>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+            let txt = "<col><col><col><colgroup span=\"4\"></colgroup><thead><tr><th tr rowspan=\"2\">Course</th>"+
+            "<th rowspan=\"2\">UCAS Code</th><th rowspan=\"2\">Starting Month</th><th colspan=\"3\">Duration<tr>"+
+            "<th scope=\"col\">Full Time</th><th scope=\"col\">Part Time</th><th scope=\"col\">Foundation</th>"+
+            "</tr></th></tr></thead>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
             let txt2 = "<tr><th>Course</th></tr>"; //colgroup col rowspan colspan from https://jsfiddle.net/SyedFayaz/ud0mpgoh/7/
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
                     txt += "<tbody><tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
-                    + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + "</tr></tbody>";
+                    + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + 
+                    data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + 
+                    "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
                     txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
