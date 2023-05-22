@@ -28,20 +28,20 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);//thead, tbody adn sub headings https://stackoverflow.com/questions/22702825/create-a-table-with-sub-headings-and-side-headings
-            let txt = "<col><col><col><colgroup span=\"4\"></colgroup>" + //colgroup col rowspan colspan from https://jsfiddle.net/SyedFayaz/ud0mpgoh/7/
+            let txt = "<col><col><col><colgroup span=\"3\"></colgroup><colgroup span=\"3\"></colgroup><colgroup span=\"2\"></colgroup>" + //colgroup col rowspan colspan from https://jsfiddle.net/SyedFayaz/ud0mpgoh/7/
             "<thead><tr><th rowspan=\"2\">Course</th>"+
             "<th rowspan=\"2\">UCAS Code</th>" + 
             "<th rowspan=\"2\">Starting Month</th>" + 
             "<th colspan=\"3\">Duration</th>"+
-            "<tr><th scope=\"col\">Full Time</th>" + 
-            "<th scope=\"col\">Part Time</th>" + 
-            "<th scope=\"col\">Foundation</th></tr>"+
             "<th colspan=\"3\">UK Fees</th>" +
+            "<th colspan=\"2\">International Fees</th>" +
             "<tr><th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
             "<th scope=\"col\">Foundation</th></tr>"+
-            "<th colspan=\"3\">International Fees</th>" +
-            "<tr><th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Part Time</th>" + 
+            "<th scope=\"col\">Foundation</th>"+
+            "<th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Foundation</th></tr>"+
             "</tr></thead>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
             let txt2 = "<tr><th>Course</th></tr>"; 
