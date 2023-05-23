@@ -57,7 +57,8 @@ function showContents() {
                     "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
-                    txt2 += "<tr><td>" + data.courses[i].course + "</td></tr>";
+                    txt2 += "<tr><tbody>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
+                    + "<td>" + data.courses[i].duration.fulltime + "</td>"+ "</tbody></tr>";
                 }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
