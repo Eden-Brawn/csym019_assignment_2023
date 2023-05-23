@@ -74,7 +74,7 @@ function showContents() {
                     + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
                     + "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>"  
                     +  "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.parttime + "</td>" 
-                    + "</tbody></tr>";
+                    + "<td>" + data.courses[i].location + "</td>" + "</tbody></tr>";
                 }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
