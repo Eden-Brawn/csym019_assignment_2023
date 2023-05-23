@@ -331,7 +331,7 @@
                     "fulltime": 8010
                 },
                 "internationalfees": {
-                    "fulltime": 16500 
+                    "fulltime": 16500
                 },
                 "optionalworkplacementyear": 1000
             },
@@ -396,6 +396,9 @@
             "fees": {
                 "ukfees": {
                     "parttime": 4005
+                },
+                "internationalfees": {
+                    "fulltime": null
                 }
             },
             "location": "Waterside",

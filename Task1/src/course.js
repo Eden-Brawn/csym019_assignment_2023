@@ -73,6 +73,7 @@ function showContents() {
                     txt2 += "<tr><tbody>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
                     + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
                     + "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>"  
+                    +  "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.parttime + "</td>" 
                     + "</tbody></tr>";
                 }
             }
