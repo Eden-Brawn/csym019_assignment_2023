@@ -45,7 +45,19 @@ function showContents() {
             "<th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Foundation</th></tr>"+
             "</tr></thead>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
-            let txt2 = "<tr><th>Course</th></tr>"; 
+            let txt2 = "<col><col><colgroup span=\"2\"></colgroup><colgroup span=\"\"></colgroup><colgroup span=\"2\"></colgroup>" +
+            "<thead><tr><th rowspan=\"2\">Course</th>"+
+            "<th rowspan=\"2\">Starting Month</th>" + 
+            "<th colspan=\"2\">Duration</th>"+
+            "<th colspan=\"2\">UK Fees</th>" +
+            "<th colspan=\"2\">International Fees</th>" +
+            "<th rowspan=\"2\">Location</th>" +
+            "<tr><th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Part Time</th>" + 
+            "<th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Part Time</th>" +
+            "<th scope=\"col\">Full Time</th>" + 
+            "<th scope=\"col\">Part Time</th>"; 
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
                     txt += "<tbody><tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
@@ -58,7 +70,8 @@ function showContents() {
                 }
                 if(data.courses[i].level == "Postgraduate"){
                     txt2 += "<tr><tbody>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
-                    + "<td>" + data.courses[i].duration.fulltime + "</td>"+ "</tbody></tr>";
+                    + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
+                    + "</tbody></tr>";
                 }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
