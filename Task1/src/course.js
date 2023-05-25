@@ -85,3 +85,9 @@ function showContents() {
         }
     }
 }
+
+setTimeout(() => {
+    //document.location.reload();
+    showContents();
+    console.log("h");
+  }, 3000);
