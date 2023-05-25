@@ -61,7 +61,7 @@ function showContents() {
             "</tr></thead>"; 
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
-                    txt += "<tbody><tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
+                    txt += "<tbody id=\" " + data.courses[i].course + "\"><tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
                     + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + 
                     data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + 
                     "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>" + 
@@ -70,11 +70,11 @@ function showContents() {
                     "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
-                    txt2 += "<tr><tbody>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
+                    txt2 += "<tbody id=\" " + data.courses[i].course + "\"><tr>" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
                     + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
                     + "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>"  
                     +  "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.parttime + "</td>" 
-                    + "<td>" + data.courses[i].location + "</td>" + "</tbody></tr>";
+                    + "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
             }
             document.getElementById("undergradcourse").innerHTML = txt;
@@ -88,8 +88,6 @@ function showContents() {
 
 setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/
     window.location.reload();
-    //showContents();
-    //console.log("h");
   }, 60000);
 
 
