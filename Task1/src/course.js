@@ -86,7 +86,7 @@ function showContents() {
     }
 }
 
-setTimeout(() => {
+setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/
     window.location.reload();
     //showContents();
     //console.log("h");
