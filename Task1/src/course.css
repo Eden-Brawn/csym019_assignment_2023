@@ -12,8 +12,9 @@ header {
 }
 footer {
     background-color: black;
-    padding: 2em;
+    padding: 4em;
     color: white;
+    margin: 1em;
 }
 footer h3{
     color: white;
@@ -31,6 +32,8 @@ tr{
 }
 body{
     background-color:white;
+    margin: 0;/*to get the header to touch edge of screen https://www.sitepoint.com/community/t/make-divs-touch-edge-of-page/256566/2*/
+    padding: 0;
 }
 section{
     text-align: center;
