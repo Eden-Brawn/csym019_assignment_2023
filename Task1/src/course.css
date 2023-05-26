@@ -1,6 +1,6 @@
 header {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 2em;
 }
 footer {
@@ -10,6 +10,12 @@ footer {
 table{
     text-align: center;
 }
-td{
-    background-color: grey;
+tr{
+    background-color: white;
+}
+body{
+    background-color:white;
+}
+section{
+    background-color: rgba(211, 211, 211, 0.256);
 }
