@@ -86,6 +86,8 @@ function showContents() {
     }
 }
 
+document.addEventListener('click', showInfo)
+
 setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/
     window.location.reload();
   }, 60000);
