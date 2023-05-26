@@ -7,3 +7,9 @@ footer {
     background-color: black;
     padding: 2em;
 }
+table{
+    text-align: center;
+}
+td{
+    background-color: grey;
+}
