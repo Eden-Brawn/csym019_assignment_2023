@@ -7,3 +7,11 @@ footer {
     background-color: black;
     padding: 2em;
 }
+.body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header"
+                        "section section section section"
+                        "footer footer footer footer";
+}
