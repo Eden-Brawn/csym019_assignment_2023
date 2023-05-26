@@ -12,9 +12,8 @@ header {
 }
 footer {
     background-color: black;
-    padding: 4em;
     color: white;
-    margin: 1em;
+    padding: 2em;
 }
 footer h3{
     color: white;
