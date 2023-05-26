@@ -61,7 +61,7 @@ function showContents() {
             "</tr></thead>"; 
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
-                    txt += "<tbody><tr id=\" " + data.courses[i].course + "\">" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
+                    txt += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
                     + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + 
                     data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + 
                     "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>" + 
@@ -70,7 +70,7 @@ function showContents() {
                     "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
-                    txt2 += "<tbody><tr id=\" " + data.courses[i].course + "\">" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
+                    txt2 += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td>" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
                     + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
                     + "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>"  
                     +  "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.parttime + "</td>" 
@@ -79,6 +79,21 @@ function showContents() {
             }
             document.getElementById("undergradcourse").innerHTML = txt;
             document.getElementById("postgradcourse").innerHTML = txt2;
+            
+            const rows = document.getElementsByTagName("tr");
+            const result = document.getElementById("info");
+
+            const rowPressed = e => { /*The click to show content from https://softauthor.com/get-id-of-clicked-element-in-javascript/#:~:text=The%20buttonPressed()%20callback%20function%20will%20have%20a%20returned%20event,ID%20of%20the%20clicked%20element.*/
+                for(let i=0; i < data.courses.length; i++){
+                    if(data.courses[i].course == e.target.innerHTML){
+                        result.innerHTML = "";
+                    }
+                }
+            }
+
+            for (let tr of rows) {
+                tr.addEventListener("click", rowPressed);
+            }
         }
         else {
             document.getElementById("updatemessage").innerHTML = "An error occurred: " + xhr.status;
@@ -86,9 +101,10 @@ function showContents() {
     }
 }
 function showInfo(){
-    
+    txt = "<p>yoyoyo</p>";
+    document.getElementById("info").innerHTML = txt;
 }
-document.addEventListener('click', showInfo)
+
 
 setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/
     window.location.reload();
