@@ -7,6 +7,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    background: linear-gradient(to bottom, black 90%, yellow 10%);
 }
 footer {
     background-color: black;
