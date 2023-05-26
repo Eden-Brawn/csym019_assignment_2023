@@ -1,6 +1,5 @@
 header {
-    background-color: white;
-    color: black;
+    color: white;
     padding: 2em;
 }
 footer {
@@ -14,8 +13,11 @@ tr{
     background-color: white;
 }
 body{
-    background-color:white;
+    background-color:black;
 }
 section{
     background-color: rgba(211, 211, 211, 0.256);
+}
+h1 {
+    color: white;
 }
