@@ -95,7 +95,8 @@ function showContents() {
                         "<p>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</p><p>Integrated Foundation Year:</p>" +
                         "<p>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</p>" +
                         "<p>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</p>" +
-                        "<p>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</p>";
+                        "<p>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</p><p>Language Requirements:</p>" +
+                        "<p>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</p>";
                     }
                 }
             }
