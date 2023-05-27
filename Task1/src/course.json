@@ -64,11 +64,11 @@
                 "ukfees": {
                     "fulltime": 9250,
                     "parttime": 1540,
-                    "integratedfoundationyear": "N/A"
+                    "integratedfoundationyear": 0
                 },
                 "internationalfees": {
                     "fulltime": 14750,
-                    "integratedfoundationyear": "N/A"
+                    "integratedfoundationyear": 0
                 },
                 "optionalworkplacementyear": 1200
             },
@@ -257,14 +257,11 @@
             "fees": {
                 "ukfees": {
                     "fulltime": 8010,
-                    "parttime": {
-                        "Year One": 2670,
-                        "Year Two": 5340
-                    }
+                    "parttime": 8010
                 },
                 "internationalfees": {
                     "fulltime": 16500,
-                    "parttime": null
+                    "parttime": 0
                 }
             },
             "location": "Waterside",
@@ -330,10 +327,12 @@
             },
             "fees": {
                 "ukfees": {
-                    "fulltime": 8010
+                    "fulltime": 8010,
+                    "parttime": 0
                 },
                 "internationalfees": {
-                    "fulltime": 16500
+                    "fulltime": 16500,
+                    "parttime": 0
                 },
                 "optionalworkplacementyear": 1000
             },
