@@ -25,7 +25,7 @@ footer p {
 table{
     text-align: center;
     margin: auto; /*How to center content from https://www.javatpoint.com/how-to-center-a-table-in-css#:~:text=By%20default%2C%20the%20alignment%20of,browsers%20show%20the%20table%20centered.*/
-    box-shadow: 1px 1px 7px  black;
+    box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.411);
     padding: 1em;
 }
 tr{
