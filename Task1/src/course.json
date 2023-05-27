@@ -263,7 +263,8 @@
                     }
                 },
                 "internationalfees": {
-                    "fulltime": 16500
+                    "fulltime": 16500,
+                    "parttime": null
                 }
             },
             "location": "Waterside",
@@ -321,9 +322,10 @@
             "id": 8,
             "course": "Project Management MSc",
             "level": "Postgraduate",
-            "starting": "January/nJune/nSeptember",
+            "starting": "January, June, September",
             "duration": {
                 "fulltime": "1 Year",
+                "parttime": "N/A",
                 "fulltimeplacementyear": "2 Years"
             },
             "fees": {
@@ -366,7 +368,8 @@
                     "parttime": 890
                 },
                 "internationalfees": {
-                    "fulltime": 16500
+                    "fulltime": 16500,
+                    "parttime": 0
                 }
             },
             "location": "Waterside",
@@ -391,14 +394,17 @@
             "level": "Postgraduate",
             "starting": "September",
             "duration": {
+                "fulltime": "N/A",
                 "parttime": "2 Years"
             },
             "fees": {
                 "ukfees": {
+                    "fulltime": 0,
                     "parttime": 4005
                 },
                 "internationalfees": {
-                    "fulltime": "N/A"
+                    "fulltime": 0,
+                    "parttime": 0
                 }
             },
             "location": "Waterside",
