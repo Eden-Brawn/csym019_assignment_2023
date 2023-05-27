@@ -89,10 +89,13 @@ function showContents() {
                         result.innerHTML = "<h2>" + data.courses[i].course + "</h2>" +
                         "<h3>Details</h3>" +
                         "<p>" + "</p>" +
-                        "<h3>Entry Requirments</h3>"
+                        "<h3>Entry Requirments</h3>" +
                         "<p>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</p>" +
                         "<p>At BTEC: " + data.courses[i].entryrequirements.standard.btec + "</p>" +
-                        "<p>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</p>";
+                        "<p>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</p><p>Integrated Foundation Year:</p>" +
+                        "<p>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</p>" +
+                        "<p>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</p>" +
+                        "<p>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</p>";
                     }
                 }
             }
