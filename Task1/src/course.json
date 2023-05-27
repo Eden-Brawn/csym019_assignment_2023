@@ -21,7 +21,7 @@
                     "fulltime": 14750,
                     "integratedfoundationyear": 14750
                 },
-                "optionalworkplacementyear": "Not Applicable"
+                "optionalworkplacementyear": "N/A"
             },
             "location": "Waterside",
             "contact": {
@@ -54,7 +54,7 @@
             "course": "Accounting and Finance BSc (Hons)",
             "ucascode": "N420",
             "level": "Undergraduate",
-            "starting": "Starting",
+            "starting": "September",
             "duration": {
                 "fulltime": "3 Years",
                 "parttime": "4 - 6 Years",
@@ -64,11 +64,11 @@
                 "ukfees": {
                     "fulltime": 9250,
                     "parttime": 1540,
-                    "integratedfoundationyear": "Not Applicable"
+                    "integratedfoundationyear": "N/A"
                 },
                 "internationalfees": {
                     "fulltime": 14750,
-                    "integratedfoundationyear": "Not Applicable"
+                    "integratedfoundationyear": "N/A"
                 },
                 "optionalworkplacementyear": 1200
             },
@@ -168,7 +168,7 @@
                     "fulltime": 14750,
                     "integratedfoundationyear": 14750
                 },
-                "optionalworkplacementyear": "Not Applicable"
+                "optionalworkplacementyear": "N/A"
             },
             "location": "Waterside",
             "contact": {
@@ -217,7 +217,7 @@
                     "fulltime": 14750,
                     "integratedfoundationyear": 14750
                 },
-                "optionalworkplacementyear": "Not Applicable"
+                "optionalworkplacementyear": "N/A"
             },
             "location": "Waterside",
             "contact": {
@@ -398,7 +398,7 @@
                     "parttime": 4005
                 },
                 "internationalfees": {
-                    "fulltime": null
+                    "fulltime": "N/A"
                 }
             },
             "location": "Waterside",
