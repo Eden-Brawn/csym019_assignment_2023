@@ -86,7 +86,10 @@ function showContents() {
             const rowPressed = e => { /*The click to show content from https://softauthor.com/get-id-of-clicked-element-in-javascript/#:~:text=The%20buttonPressed()%20callback%20function%20will%20have%20a%20returned%20event,ID%20of%20the%20clicked%20element.*/
                 for(let i=0; i < data.courses.length; i++){
                     if(data.courses[i].course == e.target.innerHTML){
-                        result.innerHTML = "<h2>" + data.courses[i].course + "</h2>";
+                        result.innerHTML = "<h2>" + data.courses[i].course + "</h2>" +
+                        "<h3>Summary</h3>" +
+                        "<p></p>" +
+                        "";
                     }
                 }
             }
