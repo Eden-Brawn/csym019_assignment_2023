@@ -39,6 +39,7 @@ section{
     background-color: white;
     border-radius: 1em;
     color: black;
+    margin-top: 2em;
 }
 h2{
     text-align: center;
@@ -59,4 +60,10 @@ td:hover{
 }
 #course:hover{
     background-color: rgba(220,199,0,255);
+}
+h1 h2 h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
 }
