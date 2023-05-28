@@ -89,14 +89,15 @@ function showContents() {
                         result.innerHTML = "<h2>" + data.courses[i].course + "</h2>" +
                         "<h3>Details</h3>" +
                         "<p>" + "</p>" +
-                        "<h3>Entry Requirments</h3>" +
-                        "<p>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</p>" +
+                        "<h3>Entry Requirments</h3> <p>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</p>" +
                         "<p>At BTEC: " + data.courses[i].entryrequirements.standard.btec + "</p>" +
                         "<p>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</p><p>Integrated Foundation Year:</p>" +
                         "<p>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</p>" +
                         "<p>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</p>" +
                         "<p>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</p><p>Language Requirements:</p>" +
-                        "<p>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</p>";
+                        "<p>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</p>" +
+                        "<h3>Tuition fees</h3> <p>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</p>" +
+                        "<p>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</p>" +;
                     }
                 }
             }
@@ -110,11 +111,6 @@ function showContents() {
         }
     }
 }
-function showInfo(){
-    txt = "<p>yoyoyo</p>";
-    document.getElementById("info").innerHTML = txt;
-}
-
 
 setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/
     window.location.reload();
