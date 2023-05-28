@@ -87,19 +87,19 @@ function showContents() {
                 for(let i=0; i < data.courses.length; i++){
                     if(data.courses[i].course == e.target.innerHTML){
                         result.innerHTML = "<h2>" + data.courses[i].course + "</h2>" +
-                        "<h3 id=\"details\">Details</h3><p id=\"details\">" + data.courses[i].description + "</p>" +
-                        "<h3 id=\"entry\">Entry Requirements</h3><ul id=\"entry\"><li>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</li>" +
+                        "<div id=\"details\"><h3>Details</h3><p>" + data.courses[i].description + "</p></div>" +
+                        "<div id=\"entry\"><h3>Entry Requirements</h3><ul><li>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</li>" +
                         "<li>At BTEC: " + data.courses[i].entryrequirements.standard.btec + "</li>" +
-                        "<li>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</li></ul><p id=\"entry\">Integrated Foundation Year:</p>" +
-                        "<ul id=\"entry\"><li>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</li>" +
+                        "<li>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</li></ul><p>Integrated Foundation Year:</p>" +
+                        "<ul><li>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</li>" +
                         "<li>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</li>" +
-                        "<li>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</li></ul><p id=\"entry\">Language Requirements:</p>" +
-                        "<ul id=\"entry\"><li>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</li></ul>" +
-                        "<h3 id=\"tuition\">Tuition fees</h3><ul id=\"tuition\"><li>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</li>" +
+                        "<li>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</li></ul><p>Language Requirements:</p>" +
+                        "<ul><li>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</li></ul></div>" +
+                        "<div id=\"tuition\"><h3>Tuition fees</h3><ul><li>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</li>" +
                         "<li>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</li><li>The fee for an UK students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
                         "</li><li>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</li>" +
                         "<li>The fee for international students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</li>" +
-                        "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul>";
+                        "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div>";
                     }
                 }
             }

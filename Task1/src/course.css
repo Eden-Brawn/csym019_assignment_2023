@@ -81,20 +81,19 @@ section .undertext{
     margin-left: 4em;
     font-size: 1em;
 }
-info{
+div{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
+    grid-template-rows: 50% 50%;
     grid-template-areas: "details details"
-                        "entry entry"
-                        "tuition tuition";
+                        "entry tuition";
 }
-#details{
+.details{
     grid-area: details;
 }
-#entry{
+.entry{
     grid-area: entry;
 }
-#tuition{
+.tuition{
     grid-area: tuition;
 }
