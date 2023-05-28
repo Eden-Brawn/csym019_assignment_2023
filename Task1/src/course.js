@@ -87,8 +87,7 @@ function showContents() {
                 for(let i=0; i < data.courses.length; i++){
                     if(data.courses[i].course == e.target.innerHTML){
                         result.innerHTML = "<h2>" + data.courses[i].course + "</h2>" +
-                        "<h3>Details</h3>" +
-                        "<p>" + "</p>" +
+                        "<h3>Details</h3><p>" + data.courses[i].description + "</p>" +
                         "<h3>Entry Requirments</h3><ul><li>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</li>" +
                         "<li>At BTEC: " + data.courses[i].entryrequirements.standard.btec + "</li>" +
                         "<li>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</li></ul><p>Integrated Foundation Year:</p>" +
