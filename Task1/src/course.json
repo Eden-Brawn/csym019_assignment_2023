@@ -55,6 +55,7 @@
             "course": "Accounting and Finance BSc (Hons)",
             "ucascode": "N420",
             "level": "Undergraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "3 Years",
@@ -104,6 +105,7 @@
             "course": "Advertising & Digital Marketing BA (Hons)",
             "ucascode": "N564",
             "level": "Undergraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "3 Years",
@@ -153,6 +155,7 @@
             "course": "Architectural Technology BSc (Hons)",
             "ucascode": "K210",
             "level": "Undergraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "3 Years",
@@ -202,6 +205,7 @@
             "course": "Criminal and Corporate Investigation BA (Hons)",
             "ucascode": "L438",
             "level": "Undergraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "3 Years",
@@ -250,6 +254,7 @@
             "id": 6,
             "course": "Human Resource Management MA",
             "level": "Postgraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "1 Year",
@@ -285,6 +290,7 @@
             "id": 7,
             "course": "History MA",
             "level": "Postgraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "1 Year",
@@ -320,6 +326,7 @@
             "id": 8,
             "course": "Project Management MSc",
             "level": "Postgraduate",
+            "description": "",
             "starting": "January, June, September",
             "duration": {
                 "fulltime": "1 Year",
@@ -357,6 +364,7 @@
             "id": 9,
             "course": "Strength and Conditioning MSc",
             "level": "Postgraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "1 Year",
@@ -392,6 +400,7 @@
             "id": 10,
             "course": "Counselling MSc",
             "level": "Postgraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "N/A",
