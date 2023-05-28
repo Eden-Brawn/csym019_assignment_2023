@@ -5,6 +5,7 @@
             "course": "Business Computing BSc (Hons)",
             "ucascode": "G503",
             "level": "Undergraduate",
+            "description": "",
             "starting": "September",
             "duration": {
                 "fulltime": "3 Years",

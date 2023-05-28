@@ -13,6 +13,7 @@
                         "course": {"type": "string"},
                         "ucascode": {"type": "string"},
                         "level": {"type": "string"},
+                        "description": {"type": "string"},
                         "starting": {"type": "string"},
                         "duration": {"type": "object",
                             "properties": {
