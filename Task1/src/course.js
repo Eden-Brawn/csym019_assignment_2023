@@ -89,18 +89,18 @@ function showContents() {
                         result.innerHTML = "<h2>" + data.courses[i].course + "</h2>" +
                         "<h3>Details</h3>" +
                         "<p>" + "</p>" +
-                        "<h3>Entry Requirments</h3> <p>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</p>" +
-                        "<p>At BTEC: " + data.courses[i].entryrequirements.standard.btec + "</p>" +
-                        "<p>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</p><p>Integrated Foundation Year:</p>" +
-                        "<p>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</p>" +
-                        "<p>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</p>" +
-                        "<p>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</p><p>Language Requirements:</p>" +
-                        "<p>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</p>" +
-                        "<h3>Tuition fees</h3> <p>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</p>" +
-                        "<p>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</p><p>The fee for an UK students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
-                        "</p><p>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</p>" +
-                        "<p>The fee for international students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</p>" +
-                        "<p>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</p>";
+                        "<h3>Entry Requirments</h3><ul><li>At A Level: " + data.courses[i].entryrequirements.standard.alevel + "</li>" +
+                        "<li>At BTEC: " + data.courses[i].entryrequirements.standard.btec + "</li>" +
+                        "<li>At T Level: " + data.courses[i].entryrequirements.standard.tlevel + "</li></ul><p>Integrated Foundation Year:</p>" +
+                        "<ul><li>At A Level: " + data.courses[i].entryrequirements.integratedfoundationyear.alevel + "</li>" +
+                        "<li>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</li>" +
+                        "<li>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</li></ul><p>Language Requirements:</p>" +
+                        "<ul><li>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</li></ul>" +
+                        "<h3>Tuition fees</h3><ul><li>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</li>" +
+                        "<li>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</li><li>The fee for an UK students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
+                        "</li><li>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</li>" +
+                        "<li>The fee for international students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</li>" +
+                        "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li>";
                     }
                 }
             }
