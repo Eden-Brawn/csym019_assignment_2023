@@ -97,7 +97,8 @@ function showContents() {
                         "<p>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</p><p>Language Requirements:</p>" +
                         "<p>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</p>" +
                         "<h3>Tuition fees</h3> <p>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</p>" +
-                        "<p>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</p>" +;
+                        "<p>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</p><p>The fee for an integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
+                        "</p>";
                     }
                 }
             }
