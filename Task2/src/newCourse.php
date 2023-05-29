@@ -20,7 +20,6 @@
         </nav>
         <main>
             <h3>Sample New Course Entery Form</h3>
-            <form action="post">
                 <div class="sketch">
                     <img src="./sampleEntryForm.png" alt="New course entry form">
                 </div>    
@@ -32,17 +31,15 @@
                         <label>UCAS Code</label> <input type="text" name="course_ucas_code"/>
                         <label>Course Level</label> <input type="text" name="course_level"/>
                         
-                        <input type="submit" name="newcourse" value="Submit" />
+                        <input type="submit" value="Add Course" />
                     </form>
 
 
 
                     <!-- add more feilds for the remaining recipe info ...-->
-                    <p class="note">The sketch above provides an incomplete list of the required information for a new course. You need to add the missing feilds to the New Course Entry Form you are going to develop.</p>
-                    <input type="submit" value="Add Course" />
+                    
                     <!--input type="reset" value="Cancel" /-->                
                 </div>
-            </form>
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
