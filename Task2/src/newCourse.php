@@ -1,6 +1,18 @@
 <?php
     require 'mySql.php';
 
+    if (isset($_POST['submit'])) {
+        $stmt = $pdo->prepare('INSERT INTO person (email, birthday, firstname, surname) VALUES (:email, :birthday, :firstname, :surname)');
+        $values = [
+            'firstname' => $_POST['firstname'],
+            'surname' => $_POST['surname'],
+            'email' => $_POST['email'],
+            'birthday' => $_POST['birthday']
+        ];
+        $stmt->execute($values);
+    }
+    ?>
+
 ?>
 <!DOCTYPE html>
 <html>
