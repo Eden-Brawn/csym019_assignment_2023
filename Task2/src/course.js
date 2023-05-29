@@ -6,5 +6,14 @@ function addEditDelete() {
     let del = document.getElementById('delete');
     add.addEventListener('click', del);
 }
+function add(){
+
+}
+function edit(){
+
+}
+function del(){
+
+}
 
 document.addEventListener('DOMContentLoaded', addEditDelete);
