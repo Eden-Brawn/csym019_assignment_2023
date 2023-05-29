@@ -43,7 +43,25 @@
                                     
                     <input type="submit" name="submitnew" value="Add Course" />  
                 </form>
-            </div>    
+            </div>  
+            <div class="editcourse">
+
+            </div>  
+            <div id="delcourse">
+                <form action="editDelCourse">
+                    <select name="deletecourse">
+                        <?php
+                            $course = $pdo->prepare('SELECT * FROM course');
+                            $course ->execute(); 
+                            foreach ($course as $title){
+                                echo '<option value="">Choose A Course</option>' .
+                                '<option value="' . $row['course_title'] .'">'. $row['course_title'] .'</option>'
+                            }
+                        ?>
+                    </select>
+                    <input type="submit" name="submitnew" value="Add Course" />  
+                </form>
+            </div>
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
