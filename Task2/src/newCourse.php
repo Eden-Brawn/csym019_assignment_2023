@@ -31,9 +31,9 @@
             </ul>
         </nav>
         <main>
-        <button id="add" type="button">Add New Course</button>
-        <button id="edit" type="button">Edit Course</button>
-        <button id="delete" type="button">Delete Course</button>
+            <button id="add" type="button">Add New Course</button>
+            <button id="edit" type="button">Edit Course</button>
+            <button id="delete" type="button">Delete Course</button>
             <div class="addmore">
                 <h3>Enter A New Course Below</h3>    
                 <form action="newCourse.php" method="POST">
@@ -48,7 +48,7 @@
 
             </div>  
             <div id="delcourse">
-                <form action="editDelCourse">
+                <form action="newCourse.php" method="POST">
                     <select name="deletecourse">
                         <option value="">Choose A Course</option>
                         <?php
@@ -59,8 +59,12 @@
                             }
                         ?>
                     </select>
-                    <input type="submit" name="submitnew" value="Add Course" />  
+                    <input type="submit" name="deletecourse" value="Delete Course" />  
                 </form>
+                <div>
+                    <h3>WARNING</h3>
+                    <p>Are You Sure You Want To Delete <?php $_POST['deletecourse'] ?></p>
+                </div>
             </div>
         </main>
         <footer>&copy; CSYM019 2023</footer>
