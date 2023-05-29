@@ -50,12 +50,12 @@
             <div id="delcourse">
                 <form action="editDelCourse">
                     <select name="deletecourse">
+                        <option value="">Choose A Course</option>
                         <?php
-                            $course = $pdo->prepare('SELECT * FROM course');
+                            $course = $pdo->prepare('SELECT course_title FROM course');
                             $course ->execute(); 
                             foreach ($course as $title){
-                                echo '<option value="">Choose A Course</option>' .
-                                '<option value="' . $row['course_title'] .'">'. $row['course_title'] .'</option>'
+                                echo '<option value="' . $title['course_title'] .'">'. $title['course_title'] .'</option>';
                             }
                         ?>
                     </select>
