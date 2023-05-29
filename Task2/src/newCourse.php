@@ -1,7 +1,7 @@
 <?php
     require 'mySql.php';
 
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['submitnew'])) {
         $stmt = $pdo->prepare('INSERT INTO course (course_title, course_ucas_code, course_level) VALUES (:title, :ucas, :gradlevel)');
         $values = [
             'title' => $_POST['course_title'],
@@ -18,6 +18,7 @@
     <head>
         <title>Course Report</title>
         <link rel="stylesheet" href="layout.css">
+        <script src="course.js"></script>
     </head>
     <body>
         <header>
@@ -30,20 +31,17 @@
             </ul>
         </nav>
         <main>
-            <h3>Sample New Course Entery Form</h3>
-                <div class="sketch">
-                    <img src="./sampleEntryForm.png" alt="New course entry form">
-                </div> 
-                <div class="addmore">
+            
+            <div class="addmore">
                 <h3>Enter A New Course Below</h3>    
-                    <form action="newCourse.php" method="POST">
-                        <label>Course Title</label> <input type="text" name="course_title"/>
-                        <label>UCAS Code</label> <input type="text" name="course_ucas_code"/>
-                        <label>Course Level</label> <input type="text" name="course_level"/>
-                                
-                        <input type="submit" name="submit" value="Add Course" />  
-                    </form>
-                </div>
+                <form action="newCourse.php" method="POST">
+                    <label>Course Title</label> <input type="text" name="course_title"/>
+                    <label>UCAS Code</label> <input type="text" name="course_ucas_code"/>
+                    <label>Course Level</label> <input type="text" name="course_level"/>
+                                    
+                    <input type="submit" name="submitnew" value="Add Course" />  
+                </form>
+            </div>    
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
