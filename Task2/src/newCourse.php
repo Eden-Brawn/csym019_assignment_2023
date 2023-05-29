@@ -2,12 +2,11 @@
     require 'mySql.php';
 
     if (isset($_POST['submit'])) {
-        $stmt = $pdo->prepare('INSERT INTO person (email, birthday, firstname, surname) VALUES (:email, :birthday, :firstname, :surname)');
+        $stmt = $pdo->prepare('INSERT INTO person (course_title, course_ucas_code, course_level) VALUES (:title, :ucas, :gradlevel)');
         $values = [
-            'firstname' => $_POST['firstname'],
-            'surname' => $_POST['surname'],
-            'email' => $_POST['email'],
-            'birthday' => $_POST['birthday']
+            'title' => $_POST['course_title'],
+            'ucas' => $_POST['course_ucas_code'],
+            'gradlevel' => $_POST['course_level']
         ];
         $stmt->execute($values);
     }
