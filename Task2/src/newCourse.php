@@ -2,7 +2,7 @@
     require 'mySql.php';
 
     if (isset($_POST['submit'])) {
-        $stmt = $pdo->prepare('INSERT INTO person (course_title, course_ucas_code, course_level) VALUES (:title, :ucas, :gradlevel)');
+        $stmt = $pdo->prepare('INSERT INTO course (course_title, course_ucas_code, course_level) VALUES (:title, :ucas, :gradlevel)');
         $values = [
             'title' => $_POST['course_title'],
             'ucas' => $_POST['course_ucas_code'],
@@ -41,7 +41,7 @@
                         <label>UCAS Code</label> <input type="text" name="course_ucas_code"/>
                         <label>Course Level</label> <input type="text" name="course_level"/>
                                 
-                        <input type="submit" value="Add Course" />  
+                        <input type="submit" name="submit" value="Add Course" />  
                     </form>
                 </div>
         </main>
