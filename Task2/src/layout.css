@@ -79,7 +79,7 @@ footer {
     height: auto;
 }
 
-.addmore > input {
+.addmore input  {
     display:block;
     float: left;
     margin: 0 2em 2em 2em;
@@ -90,7 +90,7 @@ footer {
 }
 
 /* Change the link color on hover */
-.addmore > input:hover {
+.addmore input:hover {
     display:block;
     float: left;
     margin: 0 2em 2em 2em;
@@ -98,8 +98,4 @@ footer {
     text-decoration: none;
     background-color: #555;
     color: whitesmoke;
-}
-form{
-    float: left;
-    text-align: left;
 }
