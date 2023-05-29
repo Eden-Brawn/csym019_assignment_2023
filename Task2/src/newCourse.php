@@ -1,3 +1,7 @@
+<?php
+    require '/mySql.php';
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
