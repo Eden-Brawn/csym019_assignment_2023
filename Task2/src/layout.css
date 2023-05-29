@@ -81,7 +81,7 @@ footer {
 
 .addmore input  {
     display:block;
-    float: left;
+    
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
     text-decoration: none;
@@ -92,7 +92,7 @@ footer {
 /* Change the link color on hover */
 .addmore input:hover {
     display:block;
-    float: left;
+   
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
     text-decoration: none;
