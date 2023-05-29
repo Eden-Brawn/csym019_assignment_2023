@@ -69,31 +69,43 @@ h1 h2 h3{
 p{
     font-family: 'Times New Roman', Times, serif;
 }
-div h2{
+#info h2{
     text-align: left;
 }
-div{
-    text-align: left;
-    margin-left: 4em;
-}
+
 section .undertext{
     text-align: left;
     margin-left: 4em;
     font-size: 1em;
 }
-div{
+#info{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "details details"
-                        "entry tuition";
+    grid-template-rows: auto;
+    grid-template-areas: "title title"
+                        "details details"
+                        "entry tuition"
+                        "duration duration";
+    text-align: left;
+    margin-left: 4em;                    
 }
-.details{
+#title{
+    grid-area: title;
+    text-align: left;
+}
+#details{
     grid-area: details;
+    text-align: left;
 }
-.entry{
+#entry{
     grid-area: entry;
+    text-align: left;
 }
-.tuition{
+#tuition{
     grid-area: tuition;
+    text-align: left;
+}
+#duration{
+    grid-area: duration;
+    text-align: left;
 }
