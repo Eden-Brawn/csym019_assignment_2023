@@ -14,8 +14,8 @@
         </header>
         <nav>
             <ul>
-                <li><a href="./courseSelectionForm.html">Course Report</a></li>
-                <li><a href="./newCourse.html">New Course</a></li>
+                <li><a href="./courseSelectionForm.php">Course Report</a></li>
+                <li><a href="./newCourse.php">New Course</a></li>
             </ul>
         </nav>
         <main>
