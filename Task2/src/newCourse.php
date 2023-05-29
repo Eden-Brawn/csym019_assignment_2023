@@ -31,7 +31,7 @@
             </ul>
         </nav>
         <main>
-            <button id="add" type="button">Add New Course</button>
+            <button id="add" type="button">Add New Course</button><!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
             <button id="edit" type="button">Edit Course</button>
             <button id="delete" type="button">Delete Course</button>
             <div class="addmore">
@@ -47,7 +47,7 @@
             <div class="editcourse">
 
             </div>  
-            <div id="delcourse">
+            <div class="delcourse">
                 <form action="newCourse.php" method="POST">
                     <select name="deletecourse">
                         <option value="">Choose A Course</option>

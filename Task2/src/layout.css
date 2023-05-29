@@ -81,7 +81,6 @@ footer {
 
 .addmore input  {
     display:block;
-    
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
     text-decoration: none;
@@ -92,10 +91,15 @@ footer {
 /* Change the link color on hover */
 .addmore input:hover {
     display:block;
-   
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
     text-decoration: none;
     background-color: #555;
     color: whitesmoke;
+}
+.delcourse{
+    display: none;
+}
+.editcourse{
+    display: none;
 }
