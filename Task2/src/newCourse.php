@@ -31,7 +31,9 @@
             </ul>
         </nav>
         <main>
-            
+        <button id="add" type="button">Add New Course</button>
+        <button id="edit" type="button">Edit Course</button>
+        <button id="delete" type="button">Delete Course</button>
             <div class="addmore">
                 <h3>Enter A New Course Below</h3>    
                 <form action="newCourse.php" method="POST">
