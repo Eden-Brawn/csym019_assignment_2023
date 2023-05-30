@@ -18,16 +18,13 @@
             $delete->execute($values);
     }
     if(isset($_POST['altercourse'])){/*edits an article*/
-        $course = $pdo->prepare('
-                                UPDATE course
-                                SET course_title = :course_title,
-                                    course_ucas_code = :course_ucas,
-                                    course_level = :course_level
-                                WHERE course_title = :title');
+        $course = $pdo->prepare('UPDATE course SET course_title = :title, course_ucas_code = :ucas, course_level = :gradlevel WHERE course_id = :edit');
         $edit = [
-            'course_title' => $_POST['title'],
-            'course_ucas' => $_POST['ucas'],
-            'course_level' => $_POST['level'],
+            'title' => $_POST['title'],
+            'ucas' => $_POST['ucas'],
+            'gradlevel' => $_POST['level'],
+            'edit' => $_GET['edit']
+
         ];
         $course->execute($edit);
 }
@@ -78,20 +75,23 @@
                     </select>
                     <input type="submit" value="Edit Course" />  
                     <?php
-                        $course = $pdo->prepare('SELECT * FROM course');
-                        $course ->execute(); 
+                        $course = $pdo->prepare('SELECT * FROM course WHERE course_title = :course');
+                        $edit = [
+                            'course' => $_POST['editcourse']
+                        ];
+                        $course ->execute($edit); 
+
                         if(isset($_POST['editcourse'])){
                             foreach ($course as $row){
                                 echo '<h2>Edit '. $row['course_title'].'</h2>
-                                <form action="newCourse.php method="POST">
+                                <form action="newCourse.php?edit='. $row['course_id'].'"  method="post">
                                     <label>Course Title</label> <input type="text" name="title" value="'. $row['course_title'].'"/>
                                     <label>Course UCAS Code</label> <input type="text" name="ucas" value="'. $row['course_ucas_code'].'"/>
                                     <label>Course Level</label> <input type="text" name="level" value="'. $row['course_level'].'"/>
                                     <input type="submit" name="altercourse" value="Confirm Edit" />
                                 </form>';
                             }
-
-                        }
+                            }
                     ?>
                 </form>
             </div>  
