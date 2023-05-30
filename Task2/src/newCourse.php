@@ -52,12 +52,42 @@
                 </form>
             </div>  
             <div class="editcourse">
+            <form action="newCourse.php" method="post" id="confirm">
+                    <select name="editcourse" />
+                        <option value="">Choose A Course To Edit</option>
+                        <?php
+                            $course = $pdo->prepare('SELECT course_title FROM course');
+                            $course ->execute(); 
+                            foreach ($course as $title){
+                                echo '<option value="' . $title['course_title'] .'">'. $title['course_title'] .'</option>';
+                            }
+                        ?>
+                    </select>
+                    <input type="submit" value="Edit Course" />  
+                    <?php
+                        $course = $pdo->prepare('SELECT * FROM course');
+                        $course ->execute(); 
+                        if(isset($_POST['editcourse'])){
+                            foreach ($course as $row){
+                                echo '<h2>Edit '. $row['course_title'].'</h2>
+                                <form action="newCourse.php method="POST">
+                                    <label>Course Title</label> <input type="text" name="title" value="'. $row['course_title'].'"/>
+                                    <label>Course UCAS Code</label> <input type="text" name="date" value="'. $row['course_title'].'"/>
+                                    <label>Author</label> <input type="text" name="author" value="'. $row['author'] .'"/>
+                                    <label>Category</label> <input type="text" name="category" value="'. $row['category'] .'"/>
+                                    <label>Text</label> <textarea name="text">'. $row['text'] .'</textarea>
+                                    <input type="submit" name="submiteditarticle" value="Update" />
+                                </form>';
+                            }
 
+                        }
+                    ?>
+                </form>
             </div>  
             <div class="delcourse">
                 <form action="newCourse.php" method="post" id="confirm">
                     <select name="deletecourse" />
-                        <option value="">Choose A Course</option>
+                        <option value="">Choose A Course To Delete</option>
                         <?php
                             $course = $pdo->prepare('SELECT course_title FROM course');
                             $course ->execute(); 
