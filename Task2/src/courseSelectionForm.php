@@ -24,8 +24,9 @@
             <?php
             $course = $pdo->prepare('SELECT * FROM course');
             $course ->execute();
-                echo '<table><col><col><col><col><col><col><col><colgroup span="3"></colgroup>'.
-                '<thead><tr><th>Course Name</th><th>UCAS Code</th><th>Level</th><th>Start</th><th>Location</th><th>Description</th><th>Satisfaction</th><th>Duration</th><th>UK Fees</th><th>International Fees</th><th>Work Placement</th><th>Entry Requirements</th><th>Foundation Requirements</th><th>Language Requirements</th></tr></thead>';
+                echo '<table><col><col><col><col><col><col><col><colgroup span="3"></colgroup><colgroup span="3"></colgroup><colgroup span="2"></colgroup><col><colgroup span="3"></colgroup><colgroup span="3"></colgroup><col>'.
+                '<thead><tr><th rowspan="2">Course Name</th><th rowspan="2">UCAS Code</th><th rowspan="2">Level</th><th rowspan="2">Start</th><th rowspan="2">Location</th><th rowspan="2">Description</th><th rowspan="2">Satisfaction</th><th colspan="3">Duration</th><th colspan="3">UK Fees</th><th colspan="2">International Fees</th><th rowspan="2">Work Placement</th><th colspan="3">Entry Requirements</th><th colspan="3">Foundation Requirements</th><th rowspan="2">Language Requirements</th>'.
+                '<tr><td>Full Time</td><td>Part Time</td><td>Foundation</td><td>Full Time</td><td>Part Time</td><td>Foundation</td><td>Full Time</td><td>Foundation</td><td>A Level</td><td>BTEC</td><td>T Level</td><td>A Level</td><td>BTEC</td><td>T Level</td></tr></tr></thead>';
                 foreach ($course as $row){  
                     echo '<tr>' .
                             '<td>' .$row['course_title'] . '</td>'.
