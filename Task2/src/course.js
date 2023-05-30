@@ -26,7 +26,7 @@ function del(){
     let removeEdit = document.getElementsByClassName('editcourse');
     removeEdit.style.display = 'none';
     let showDelete = document.getElementsByClassName('delcourse');
-    showDelete.style.display = 'show';
+    showDelete.style.display = 'block';
     let removeAdd = document.getElementsByClassName('addcourse');
     removeAdd.style.display = 'none';
 }

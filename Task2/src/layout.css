@@ -98,8 +98,8 @@ footer {
     color: whitesmoke;
 }
 .delcourse{
-    display: none;
+    display: block;
 }
 .editcourse{
-    display: none;
+    display: block;
 }

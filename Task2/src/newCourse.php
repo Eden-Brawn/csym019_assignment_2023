@@ -48,8 +48,8 @@
 
             </div>  
             <div class="delcourse">
-                <form action="newCourse.php" method="POST">
-                    <select name="deletecourse">
+                <form action="newCourse.php" method="post">
+                    <select name="deletecourse" />
                         <option value="">Choose A Course</option>
                         <?php
                             $course = $pdo->prepare('SELECT course_title FROM course');
@@ -59,12 +59,17 @@
                             }
                         ?>
                     </select>
-                    <input type="submit" name="deletecourse" value="Delete Course" />  
+                    <input type="submit" value="Delete Course" />  
                 </form>
-                <div>
-                    <h3>WARNING</h3>
-                    <p>Are You Sure You Want To Delete <?php $_POST['deletecourse'] ?></p>
-                </div>
+                <?php
+                    if (isset($_POST['deletecourse'])) {
+                        echo '
+                        <div>
+                            <h3>WARNING</h3>
+                            <p>Are You Sure You Want To Delete ' . $_POST['deletecourse'] . '</p>
+                        </div>';
+                    }?>
+            
             </div>
         </main>
         <footer>&copy; CSYM019 2023</footer>
