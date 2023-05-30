@@ -10,6 +10,13 @@
         ];
         $stmt->execute($values);
     }
+    if(isset($_POST['deletecourse'])){
+            $delete = $pdo->prepare('DELETE FROM course WHERE course_title = :course');
+            $values = [
+                'course' => $_POST['deletecourse']
+            ];
+            $delete->execute($values);
+    }
     ?>
 
 ?>
@@ -48,7 +55,7 @@
 
             </div>  
             <div class="delcourse">
-                <form action="newCourse.php" method="post">
+                <form action="newCourse.php" method="post" id="confirm">
                     <select name="deletecourse" />
                         <option value="">Choose A Course</option>
                         <?php
@@ -62,13 +69,7 @@
                     <input type="submit" value="Delete Course" />  
                 </form>
                 <?php
-                    if (isset($_POST['deletecourse'])) {
-                        echo '
-                        <div>
-                            <h3>WARNING</h3>
-                            <p>Are You Sure You Want To Delete ' . $_POST['deletecourse'] . '</p>
-                        </div>';
-                    }?>
+                    ?>
             
             </div>
         </main>
