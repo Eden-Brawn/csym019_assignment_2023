@@ -97,7 +97,23 @@ footer {
     background-color: #555;
     color: whitesmoke;
 }
-.delcourse input  {
+.delcourse input {
+    display:block;
+    margin: 0 2em 2em 2em;
+    padding: 0.5em 5em;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:#555;
+}
+.delcourse input:hover {
+    display:block;
+    margin: 0 2em 2em 2em;
+    padding: 0.5em 5em;
+    text-decoration: none;
+    background-color: #555;
+    color: whitesmoke;
+}
+.delcourse input {
     display:block;
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
@@ -106,6 +122,22 @@ footer {
     color:#555;
 }
 .editcourse input  {
+    display:block;
+    margin: 0 2em 2em 2em;
+    padding: 0.5em 5em;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:#555;
+}
+.editcourse input:hover {
+    display:block;
+    margin: 0 2em 2em 2em;
+    padding: 0.5em 5em;
+    text-decoration: none;
+    background-color: #555;
+    color: whitesmoke;
+}
+.editcourse select  {
     display:block;
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
