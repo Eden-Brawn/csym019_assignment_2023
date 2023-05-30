@@ -17,9 +17,22 @@
             ];
             $delete->execute($values);
     }
+    if(isset($_POST['altercourse'])){/*edits an article*/
+        $course = $pdo->prepare('
+                                UPDATE course
+                                SET course_title = :course_title,
+                                    course_ucas_code = :course_ucas,
+                                    course_level = :course_level
+                                WHERE course_title = :title');
+        $edit = [
+            'course_title' => $_POST['title'],
+            'course_ucas' => $_POST['ucas'],
+            'course_level' => $_POST['level'],
+        ];
+        $course->execute($edit);
+}
     ?>
 
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -72,8 +85,8 @@
                                 echo '<h2>Edit '. $row['course_title'].'</h2>
                                 <form action="newCourse.php method="POST">
                                     <label>Course Title</label> <input type="text" name="title" value="'. $row['course_title'].'"/>
-                                    <label>Course UCAS Code</label> <input type="text" name="date" value="'. $row['course_ucas_code'].'"/>
-                                    <label>Course Level</label> <input type="text" name="author" value="'. $row['course_level'].'"/>
+                                    <label>Course UCAS Code</label> <input type="text" name="ucas" value="'. $row['course_ucas_code'].'"/>
+                                    <label>Course Level</label> <input type="text" name="level" value="'. $row['course_level'].'"/>
                                     <input type="submit" name="altercourse" value="Confirm Edit" />
                                 </form>';
                             }
