@@ -25,7 +25,7 @@
             $course = $pdo->prepare('SELECT * FROM course');
             $course ->execute();
                 echo '<table>'.
-                '<tr><th>Course Name</th><th>UCAS Code</th><th>Level</th></tr>';
+                '<tr><th>Course Name</th><th>UCAS Code</th><th>Level</th><th>Start</th><th>Location</th><th>Description</th><th>Satisfaction</th></tr>';
                 foreach ($course as $row){  
                     echo '<tr>' .
                             '<td>' .$row['course_title'] . '</td>'.
