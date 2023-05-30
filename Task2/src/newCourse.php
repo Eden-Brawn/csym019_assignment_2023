@@ -10,14 +10,14 @@
         ];
         $stmt->execute($values);
     }
-    if(isset($_POST['deletecourse'])){
-            $delete = $pdo->prepare('DELETE FROM course WHERE course_title = :course');
+    if(isset($_POST['removecourse'])){
+            $delete = $pdo->prepare('DELETE FROM course WHERE course_id = :course');
             $values = [
-                'course' => $_POST['deletecourse']
+                'course' => $_GET['del']
             ];
             $delete->execute($values);
     }
-    if(isset($_POST['altercourse'])){/*edits an article*/
+    if(isset($_POST['altercourse'])){
         $course = $pdo->prepare('UPDATE course SET course_title = :title, course_ucas_code = :ucas, course_level = :gradlevel WHERE course_id = :edit');
         $edit = [
             'title' => $_POST['title'],
@@ -62,7 +62,7 @@
                 </form>
             </div>  
             <div class="editcourse">
-            <form action="editDeleteCourse.php" method="post" id="confirm">
+                <form action="editDeleteCourse.php" method="post" id="confirm">
                     <select name="editcourse" />
                         <option value="">Choose A Course To Edit</option>
                         <?php
@@ -77,7 +77,7 @@
                 </form>
             </div>  
             <div class="delcourse">
-                <form action="newCourse.php" method="post" id="confirm">
+                <form action="editDeleteCourse.php" method="post" id="confirm">
                     <select name="deletecourse" />
                         <option value="">Choose A Course To Delete</option>
                         <?php
