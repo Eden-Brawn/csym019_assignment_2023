@@ -92,8 +92,6 @@
                     </select>
                     <input type="submit" value="Delete Course" />  
                 </form>
-                <?php
-                    ?>
             
             </div>
         </main>
