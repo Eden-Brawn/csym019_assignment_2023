@@ -97,9 +97,19 @@ footer {
     background-color: #555;
     color: whitesmoke;
 }
-.delcourse{
-    display: block;
+.delcourse input  {
+    display:block;
+    margin: 0 2em 2em 2em;
+    padding: 0.5em 5em;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:#555;
 }
-.editcourse{
-    display: block;
+.editcourse input  {
+    display:block;
+    margin: 0 2em 2em 2em;
+    padding: 0.5em 5em;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color:#555;
 }
