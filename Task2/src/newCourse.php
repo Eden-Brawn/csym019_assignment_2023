@@ -72,11 +72,9 @@
                                 echo '<h2>Edit '. $row['course_title'].'</h2>
                                 <form action="newCourse.php method="POST">
                                     <label>Course Title</label> <input type="text" name="title" value="'. $row['course_title'].'"/>
-                                    <label>Course UCAS Code</label> <input type="text" name="date" value="'. $row['course_title'].'"/>
-                                    <label>Author</label> <input type="text" name="author" value="'. $row['author'] .'"/>
-                                    <label>Category</label> <input type="text" name="category" value="'. $row['category'] .'"/>
-                                    <label>Text</label> <textarea name="text">'. $row['text'] .'</textarea>
-                                    <input type="submit" name="submiteditarticle" value="Update" />
+                                    <label>Course UCAS Code</label> <input type="text" name="date" value="'. $row['course_ucas_code'].'"/>
+                                    <label>Course Level</label> <input type="text" name="author" value="'. $row['course_level'].'"/>
+                                    <input type="submit" name="altercourse" value="Confirm Edit" />
                                 </form>';
                             }
 
