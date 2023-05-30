@@ -110,10 +110,10 @@ footer {
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;
     text-decoration: none;
-    background-color: #555;
+    background-color: #ff0000;
     color: whitesmoke;
 }
-.delcourse input {
+.delcourse select {
     display:block;
     margin: 0 2em 2em 2em;
     padding: 0.5em 5em;

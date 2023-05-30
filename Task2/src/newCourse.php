@@ -62,6 +62,7 @@
                 </form>
             </div>  
             <div class="editcourse">
+                <h3>Edit A Course Below</h3>  
                 <form action="editDeleteCourse.php" method="post" id="confirm">
                     <select name="editcourse" />
                         <option value="">Choose A Course To Edit</option>
@@ -77,6 +78,7 @@
                 </form>
             </div>  
             <div class="delcourse">
+                <h3>Delete A Course Below</h3>  
                 <form action="editDeleteCourse.php" method="post" id="confirm">
                     <select name="deletecourse" />
                         <option value="">Choose A Course To Delete</option>
