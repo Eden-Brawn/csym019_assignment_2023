@@ -2,11 +2,10 @@
     require 'mySql.php';
 
     if (isset($_POST['submitnew'])) {
-        $stmt = $pdo->prepare('INSERT INTO course (course_title, course_ucas_code, course_level) VALUES (:title, :ucas, :gradlevel)');
+        $stmt = $pdo->prepare('INSERT INTO course (course_title, course_ucas_code, course_level) VALUES (:title, :ucas, :gradlevel, :starting)');
         $values = [
-            'title' => $_POST['course_title'],
-            'ucas' => $_POST['course_ucas_code'],
-            'gradlevel' => $_POST['course_level']
+            'title' => $_POST['course_title'], 'ucas' => $_POST['course_ucas_code'], 'gradlevel' => $_POST['course_level'],
+            'starting' => $_POST['course_start']
         ];
         $stmt->execute($values);
     }
@@ -75,7 +74,12 @@
                     <div class="formrow1"><label>A Level</label> <input type="text" name="foundation_alevel"/><label>BTEC</label> <input type="text" name="foundation_btec"/><label>T Level</label> <input type="text" name="foundation_tlevel"/></div>
                     <label>Language Requirements</label>
                     <input type="text" name="language" />
-
+                    <label>Year 1</label>
+                    <div class="formrow1"><label>Module 1</label> <input type="text" name="y1_m1"/><label>Credits</label> <input type="text" name="y1_m1_cr"/><label>Module 2</label> <input type="text" name="y1_m2"/><label>Credits</label> <input type="text" name="y1_m2_cr"/><label>Module 3</label> <input type="text" name="y1_m3"/><label>Credits</label> <input type="text" name="y1_m3_cr"/><label>Module 4</label> <input type="text" name="y1_m4"/><label>Credits</label> <input type="text" name="y1_m4_cr"/><label>Module 5</label> <input type="text" name="y1_m5"/><label>Credits</label> <input type="text" name="y1_m5_cr"/><label>Module 6</label> <input type="text" name="y1_m6"/><label>Credits</label> <input type="text" name="y1_m6_cr"/></div>
+                    <label>Year 2</label>
+                    <div class="formrow1"><label>Module 1</label> <input type="text" name="y2_m1"/><label>Credits</label> <input type="text" name="y2_m1_cr"/><label>Module 2</label> <input type="text" name="y2_m2"/><label>Credits</label> <input type="text" name="y2_m2_cr"/><label>Module 3</label> <input type="text" name="y2_m3"/><label>Credits</label> <input type="text" name="y2_m3_cr"/><label>Module 4</label> <input type="text" name="y2_m4"/><label>Credits</label> <input type="text" name="y2_m4_cr"/><label>Module 5</label> <input type="text" name="y2_m5"/><label>Credits</label> <input type="text" name="y2_m5_cr"/><label>Module 6</label> <input type="text" name="y2_m6"/><label>Credits</label> <input type="text" name="y2_m6_cr"/></div>
+                    <label>Year 3</label>
+                    <div class="formrow1"><label>Module 1</label> <input type="text" name="y3_m1"/><label>Credits</label> <input type="text" name="y3_m1_cr"/><label>Module 2</label> <input type="text" name="y3_m2"/><label>Credits</label> <input type="text" name="y3_m2_cr"/><label>Module 3</label> <input type="text" name="y3_m3"/><label>Credits</label> <input type="text" name="y3_m3_cr"/><label>Module 4</label> <input type="text" name="y3_m4"/><label>Credits</label> <input type="text" name="y3_m4_cr"/><label>Module 5</label> <input type="text" name="y3_m5"/><label>Credits</label> <input type="text" name="y3_m5_cr"/><label>Module 6</label> <input type="text" name="y3_m6"/><label>Credits</label> <input type="text" name="y3_m6_cr"/></div>
                     <input type="submit" name="submitnew" value="Add Course" />  
                 </form>
             </div>  
