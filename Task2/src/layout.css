@@ -176,6 +176,6 @@ thead, th{
     position: sticky; top: 0; z-index: 1;
 }
 .check{
-    min-width: 2em;
+    min-width: 1em;
     text-align: center;
 }

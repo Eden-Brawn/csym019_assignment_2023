@@ -45,9 +45,6 @@
         foreach ($course as $row){
             echo '<h2>WARNING</h2><h3>Are You Sure You Want To Delete '. $row['course_title'].'</h3>
                 <form action="newCourse.php?del='. $row['course_id'].'"  method="post">
-                    <label>Course Title</label> <input type="text" name="title" value="'. $row['course_title'].'"/>
-                    <label>Course UCAS Code</label> <input type="text" name="ucas" value="'. $row['course_ucas_code'].'"/>
-                    <label>Course Level</label> <input type="text" name="level" value="'. $row['course_level'].'"/>
                     <input type="submit" name="removecourse" value="Yes" />
                     <input type="submit" name="course" value="No" />
                 </form>';
