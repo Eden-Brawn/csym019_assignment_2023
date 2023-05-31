@@ -154,8 +154,22 @@ table, th, td {
     border: 0.05em solid #555;
 }
 td{
-    min-width: 15em;
+    min-width: 15em;/*https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l*/
+    max-height: 10em;
+    font-size: 0.9em;
+    text-align: center;
+    max-width: 3em; /*https://stackoverflow.com/questions/31669939/clip-long-text-inside-html-table-cells-show-entire-content-on-hover */
+    white-space : nowrap;
+    overflow : auto;
 }
 th{
     min-width: 15em;
+}
+.height{
+    max-height: 5em;
+}
+.scroll{
+    max-width: 3em; /*https://stackoverflow.com/questions/31669939/clip-long-text-inside-html-table-cells-show-entire-content-on-hover */
+    white-space : normal;
+    overflow : scroll;
 }

@@ -29,13 +29,13 @@
                     '<thead><tr><th rowspan="2">Course Name</th><th rowspan="2">UCAS Code</th><th rowspan="2">Level</th><th rowspan="2">Start</th><th rowspan="2">Location</th><th rowspan="2">Description</th><th rowspan="2">Satisfaction</th><th colspan="3">Duration</th><th colspan="3">UK Fees</th><th colspan="2">International Fees</th><th rowspan="2">Work Placement</th><th colspan="3">Entry Requirements</th><th colspan="3">Foundation Requirements</th><th rowspan="2">Language Requirements</th><th colspan="12">Year 1</th><th colspan="12">Year 2</th><th colspan="12">Year 3</th>'.
                     '<tr><th>Full Time</th><th>Part Time</th><th>Foundation</th><th>Full Time</th><th>Part Time</th><th>Foundation</th><th>Full Time</th><th>Foundation</th><th>A Level</th><th>BTEC</th><th>T Level</th><th>A Level</th><th>BTEC</th><th>T Level</th><th>Module 1</th><th>Credits</th><th>Module 2</th><th>Credits</th><th>Module 3</th><th>Credits</th><th>Module 4</th><th>Credits</th><th>Module 5</th><th>Credits</th><th>Module 6</th><th>Credits</th><th>Module 1</th><th>Credits</th><th>Module 2</th><th>Credits</th><th>Module 3</th><th>Credits</th><th>Module 4</th><th>Credits</th><th>Module 5</th><th>Credits</th><th>Module 6</th><th>Credits</th><th>Module 1</th><th>Credits</th><th>Module 2</th><th>Credits</th><th>Module 3</th><th>Credits</th><th>Module 4</th><th>Credits</th><th>Module 5</th><th>Credits</th><th>Module 6</th><th>Credits</th></tr></tr></thead>';
                     foreach ($course as $row){  
-                        echo '<tr>' .
+                        echo '<tr class="height">' .
                                 '<td>' .$row['course_title'] . '</td>'.
                                 '<td>'. $row['course_ucas_code'] . '</td>'.
                                 '<td>' . $row['course_level'] . '</td>'.
                                 '<td>' .$row['course_start'] . '</td>'.
                                 '<td>'. $row['location'] . '</td>'.
-                                '<td>' . $row['course_description'] . '</td>'.
+                                '<td class="scroll">' . $row['course_description'] . '</td>'.
                                 '<td>' .$row['course_satisfaction'] . '</td>'.
                                 '<td>'. $row['duration_fulltime'] . '</td>'.
                                 '<td>' . $row['duration_parttime'] . '</td>'.
