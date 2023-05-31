@@ -20,7 +20,7 @@
         </nav>
         <main>
             <h3>Sample Course Selection Form</h3>
-            <form action="sampleCourseReport.php" >
+            <form action="sampleCourseReport.php" method="post">
                 <div class="container">    
                 <?php
                 $course = $pdo->prepare('SELECT * FROM course');
