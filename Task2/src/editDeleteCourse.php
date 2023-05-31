@@ -27,14 +27,14 @@
         ];
         $course ->execute($edit);
         foreach ($course as $row){
-            echo '<h2>Edit '. $row['course_title'].'</h2>
+            echo '<div class="addmore"><h2>Edit '. $row['course_title'].'</h2>
             <form action="newCourse.php?'. $row['course_id'] .'" method="POST">
                     <label>Course Title</label> <input type="text" name="course_title" value="'.$row['course_title'].'"/>
                     <label>UCAS Code</label> <input type="text" name="course_ucas_code" value="'.$row['course_ucas_code'].'"/>
                     <label>Course Level</label> <input type="text" name="course_level" value="'.$row['course_level'].'"/>
                     <label>Starting Month/s</label> <input type="text" name="course_start" value="'.$row['course_start'].'"/>
                     <label>Location</label> <input type="text" name="course_location" value="'.$row['location'].'"/>
-                    <label>Description</label> <textarea name="description" id="" cols="30" rows="10" value="'.$row['course_description'].'"></textarea><br><br>
+                    <label>Description</label> <textarea name="description" id="" cols="30" rows="10">'.$row['course_description'].'</textarea><br><br>
                     <label>Student Satisfaction</label> <input type="text" name="satisfaction" value="'.$row['course_satisfaction'].'"/>
                     <label>Duration</label><br>
                     <div class="formrow1"><label>Fulltime</label> <input type="text" name="duration_fulltime" value="'.$row['duration_fulltime'].'"/><label>Parttime</label> <input type="text" name="duration_parttime"value="'.$row['duration_parttime'].'"/><label>Foundation</label> <input type="text" name="duration_foundation"value="'.$row['duration_foundation'].'"/></div>
@@ -57,7 +57,7 @@
                     <label>Year 3</label>
                     <div class="formrow1"><label>Module 1</label> <input type="text" name="y3_m1" value="'.$row['year3_module1'].'"/><label>Credits</label> <input type="text" name="y3_m1_cr" value="'.$row['y3_m1_credits'].'"/><label>Module 2</label> <input type="text" name="y3_m2"  value="'.$row['year3_module2'].'"/><label>Credits</label> <input type="text" name="y3_m2_cr" value="'.$row['y3_m2_credits'].'"/><label>Module 3</label> <input type="text" name="y3_m3" value="'.$row['year3_module3'].'"/><label>Credits</label> <input type="text" name="y3_m3_cr" value="'.$row['y3_m3_credits'].'"/><label>Module 4</label> <input type="text" name="y3_m4" value="'.$row['year3_module4'].'"/><label>Credits</label> <input type="text" name="y3_m4_cr" value="'.$row['y3_m4_credits'].'"/><label>Module 5</label> <input type="text" name="y3_m5" value="'.$row['year3_module5'].'"/><label>Credits</label> <input type="text" name="y3_m5_cr" value="'.$row['y3_m5_credits'].'"/><label>Module 6</label> <input type="text" name="y3_m6" value="'.$row['year3_module6'].'"/><label>Credits</label> <input type="text" name="y3_m6_cr" value="'.$row['y3_m1_credits'].'"/></div>
                     <input type="submit" name="submitnew" value="Add Course" />  
-                </form>';
+                </form></div>';
         }
     }
     if(isset($_POST['deletecourse'])){
@@ -67,11 +67,11 @@
         ];
         $course ->execute($edit);
         foreach ($course as $row){
-            echo '<h2>WARNING</h2><h3>Are You Sure You Want To Delete '. $row['course_title'].'</h3>
+            echo '<div class="addmore"><h2>WARNING</h2><h3>Are You Sure You Want To Delete '. $row['course_title'].'</h3>
                 <form action="newCourse.php?del='. $row['course_id'].'"  method="post">
                     <input type="submit" name="removecourse" value="Yes" />
                     <input type="submit" name="course" value="No" />
-                </form>';
+                </form></div>';
         }
     }
 ?>
