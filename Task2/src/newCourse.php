@@ -62,7 +62,7 @@
                     <label>Description</label> <textarea name="description" id="" cols="30" rows="10"></textarea><br><br>
                     <label>Student Satisfaction</label> <input type="text" name="satisfaction"/>
                     <label>Duration</label><br>
-                    <label>Fulltime</label> <input type="text" name="duration_fulltime"/><label>Parttime</label> <input type="text" name="duration_parttime"/><label>Foundation</label> <input type="text" name="duration_foundation"/>
+                    <div class="formrow1"><label>Fulltime</label> <input type="text" name="duration_fulltime"/><label>Parttime</label> <input type="text" name="duration_parttime"/><label>Foundation</label> <input type="text" name="duration_foundation"/></div>
                                     
                     <input type="submit" name="submitnew" value="Add Course" />  
                 </form>
