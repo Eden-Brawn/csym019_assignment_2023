@@ -146,15 +146,16 @@ footer {
     color:#555;
 }
 .container{
-    overflow-x: auto/*https://stackoverflow.com/questions/10659679/displaying-large-amounts-of-data-in-an-html-table*/
+    overflow-x: auto;/*https://stackoverflow.com/questions/10659679/displaying-large-amounts-of-data-in-an-html-table*/
 }
-th {
-    width: 5em;
-}
-td{
-    width: 5em;
-}
+
 table, th, td {
     border-collapse: collapse;
     border: 0.05em solid #555;
+}
+td{
+    min-width: 15em;
+}
+th{
+    min-width: 15em;
 }
