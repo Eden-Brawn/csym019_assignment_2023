@@ -148,3 +148,13 @@ footer {
 .container{
     overflow-x: auto/*https://stackoverflow.com/questions/10659679/displaying-large-amounts-of-data-in-an-html-table*/
 }
+th {
+    width: 5em;
+}
+td{
+    width: 5em;
+}
+table, th, td {
+
+    border: 1px solid black;
+}
