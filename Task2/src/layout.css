@@ -152,15 +152,13 @@ footer {
 table, th, td {
     border-collapse: collapse;
     border: 0.05em solid #555;
+    table-layout: fixed;
 }
 td{
     min-width: 15em;/*https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l*/
     max-height: 10em;
     font-size: 0.9em;
     text-align: center;
-    max-width: 3em; /*https://stackoverflow.com/questions/31669939/clip-long-text-inside-html-table-cells-show-entire-content-on-hover */
-    white-space : nowrap;
-    overflow : auto;
 }
 th{
     min-width: 15em;
@@ -169,7 +167,12 @@ th{
     max-height: 5em;
 }
 .scroll{
+    height: 1em;
     max-width: 3em; /*https://stackoverflow.com/questions/31669939/clip-long-text-inside-html-table-cells-show-entire-content-on-hover */
-    white-space : normal;
-    overflow : scroll;
+    white-space : nowrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+thead, th{
+    position: sticky; top: 0; z-index: 1;
 }
