@@ -21,8 +21,93 @@
         <main>
             <h3>Sample Course Reoprt</h3>
             <div class="sketch">
-                <img src="./sampleReport.png" alt="Sample Course Report">
+                
             </div>
+            <form action="sampleCourseReport.php" method="post">
+                <div class="container"> 
+                <?php 
+                    
+                    $course = $pdo->prepare('SELECT * FROM course WHERE course_id = :course');
+                    $edit = [
+                        'course' => $_POST['row']
+                    ];
+                    $course ->execute($edit);
+                    echo '<table><col><col><col><col><col><col><col><col><colgroup span="3"></colgroup><colgroup span="3"></colgroup><colgroup span="2"></colgroup><col><colgroup span="3"></colgroup><colgroup span="3"></colgroup><col><colgroup span="12"></colgroup>'.
+                    '<thead><tr><th rowspan="2" class="check"><input type="checkbox"/></th><th rowspan="2">Course Name</th><th rowspan="2">UCAS Code</th><th rowspan="2">Level</th><th rowspan="2">Start</th><th rowspan="2">Location</th><th rowspan="2">Description</th><th rowspan="2">Satisfaction</th><th colspan="3">Duration</th><th colspan="3">UK Fees</th><th colspan="2">International Fees</th><th rowspan="2">Work Placement</th><th colspan="3">Entry Requirements</th><th colspan="3">Foundation Requirements</th><th rowspan="2">Language Requirements</th><th colspan="12">Year 1</th><th colspan="12">Year 2</th><th colspan="12">Year 3</th>'.
+                    '<tr><th>Full Time</th><th>Part Time</th><th>Foundation</th><th>Full Time</th><th>Part Time</th><th>Foundation</th><th>Full Time</th><th>Foundation</th><th>A Level</th><th>BTEC</th><th>T Level</th><th>A Level</th><th>BTEC</th><th>T Level</th><th>Module 1</th><th>Credits</th><th>Module 2</th><th>Credits</th><th>Module 3</th><th>Credits</th><th>Module 4</th><th>Credits</th><th>Module 5</th><th>Credits</th><th>Module 6</th><th>Credits</th><th>Module 1</th><th>Credits</th><th>Module 2</th><th>Credits</th><th>Module 3</th><th>Credits</th><th>Module 4</th><th>Credits</th><th>Module 5</th><th>Credits</th><th>Module 6</th><th>Credits</th><th>Module 1</th><th>Credits</th><th>Module 2</th><th>Credits</th><th>Module 3</th><th>Credits</th><th>Module 4</th><th>Credits</th><th>Module 5</th><th>Credits</th><th>Module 6</th><th>Credits</th></tr></tr></thead>';
+                    foreach ($course as $row){  
+                        echo '<tr class="height">' .//the [] is from https://stackoverflow.com/questions/10355330/is-it-possible-to-have-multiple-values-posted-from-a-html-form-checkboxes
+                                '<td class="check"><input  type="checkbox" name="row[]" value='.$row['course_id'].'/></td>'.//https://stackoverflow.com/questions/6953481/trying-to-pass-a-variable-to-another-php-page-based-on-the-data-from-checkbox
+                                '<td>' .$row['course_title'] . '</td>'.
+                                '<td>'. $row['course_ucas_code'] . '</td>'.
+                                '<td>' . $row['course_level'] . '</td>'.
+                                '<td>' .$row['course_start'] . '</td>'.
+                                '<td>'. $row['location'] . '</td>'.
+                                '<td class="scroll">' . $row['course_description'] . '</td>'.
+                                '<td>' .$row['course_satisfaction'] . '</td>'.
+                                '<td>'. $row['duration_fulltime'] . '</td>'.
+                                '<td>' . $row['duration_parttime'] . '</td>'.
+                                '<td>' .$row['duration_foundation'] . '</td>'.
+                                '<td>'. $row['uk_fees_fulltime'] . '</td>'.
+                                '<td>' . $row['uk_fees_parttime'] . '</td>'.
+                                '<td>' .$row['uk_fees_foundation'] . '</td>'.
+                                '<td>'. $row['international_fees_fulltime'] . '</td>'.
+                                '<td>' . $row['international_fees_foundation'] . '</td>'.
+                                '<td>' .$row['work_placement'] . '</td>'.
+                                '<td>'. $row['entry_grades_alevel'] . '</td>'.
+                                '<td>' . $row['entry_grades_btec'] . '</td>'.
+                                '<td>' .$row['entry_grades_tlevel'] . '</td>'.
+                                '<td>'. $row['foundation_grades_alevel'] . '</td>'.
+                                '<td>' . $row['foundation_grades_btec'] . '</td>'.
+                                '<td>' .$row['foundation_grades_tlevel'] . '</td>'.
+                                '<td>'. $row['language_requirements'] . '</td>'.
+                                '<td>' . $row['year1_module1'] . '</td>'.
+                                '<td>' .$row['y1_m1_credits'] . '</td>'.
+                                '<td>'. $row['year1_module2'] . '</td>'.
+                                '<td>' . $row['y1_m2_credits'] . '</td>'.
+                                '<td>' .$row['year1_module3'] . '</td>'.
+                                '<td>'. $row['y1_m3_credits'] . '</td>'.
+                                '<td>' . $row['year1_module4'] . '</td>'.
+                                '<td>' .$row['y1_m4_credits'] . '</td>'.
+                                '<td>'. $row['year1_module5'] . '</td>'.
+                                '<td>' . $row['y1_m5_credits'] . '</td>'.
+                                '<td>' .$row['year1_module6'] . '</td>'.
+                                '<td>'. $row['y1_m6_credits'] . '</td>'.
+                                '<td>' . $row['year2_module1'] . '</td>'.
+                                '<td>' .$row['y2_m1_credits'] . '</td>'.
+                                '<td>'. $row['year2_module2'] . '</td>'.
+                                '<td>' . $row['y2_m2_credits'] . '</td>'.
+                                '<td>' .$row['year2_module3'] . '</td>'.
+                                '<td>'. $row['y2_m3_credits'] . '</td>'.
+                                '<td>' . $row['year2_module4'] . '</td>'.
+                                '<td>' .$row['y2_m4_credits'] . '</td>'.
+                                '<td>'. $row['year2_module5'] . '</td>'.
+                                '<td>' . $row['y2_m5_credits'] . '</td>'.
+                                '<td>' .$row['year2_module6'] . '</td>'.
+                                '<td>'. $row['y2_m6_credits'] . '</td>'.
+                                '<td>' . $row['year3_module1'] . '</td>'.
+                                '<td>' .$row['y3_m1_credits'] . '</td>'.
+                                '<td>'. $row['year3_module2'] . '</td>'.
+                                '<td>' . $row['y3_m2_credits'] . '</td>'.
+                                '<td>' .$row['year3_module3'] . '</td>'.
+                                '<td>'. $row['y3_m3_credits'] . '</td>'.
+                                '<td>' . $row['year3_module4'] . '</td>'.
+                                '<td>' .$row['y3_m4_credits'] . '</td>'.
+                                '<td>'. $row['year3_module5'] . '</td>'.
+                                '<td>' . $row['y3_m5_credits'] . '</td>'.
+                                '<td>' .$row['year3_module6'] . '</td>'.
+                                '<td>'. $row['y3_m6_credits'] . '</td>'.
+                            '</tr>';
+                    }
+                    echo '</table>';
+                ?>
+                </div>
+            </form>
+            <?php
+                foreach($_POST['row'] as $key)//this is based on https://stackoverflow.com/questions/27262558/getting-php-syntax-error-unexpected-foreach-t-foreach
+                {
+                    echo "<p>".$key."</p>";
+                } ?>
             <div class="addmore">
                 <p class="note">The sketch above provides a sample report based on the selection of TWO courses.</p>
                 <p class="blueNote">IMPORTANT NOTE: ALL CHARTS MUST BE CREATED USING THE <a href="https://www.chartjs.org">Chartjs</a> LIBRARY.</p>
