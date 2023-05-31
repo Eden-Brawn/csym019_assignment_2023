@@ -157,7 +157,7 @@ table, th, td {
 td{
     min-width: 15em;/*https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l*/
     max-height: 10em;
-    font-size: 0.9em;
+    font-size: 1.25em;
     text-align: center;
 }
 th{
@@ -170,8 +170,7 @@ th{
     height: 1em;
     max-width: 3em; /*https://stackoverflow.com/questions/31669939/clip-long-text-inside-html-table-cells-show-entire-content-on-hover */
     white-space : nowrap;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 thead, th{
     position: sticky; top: 0; z-index: 1;
