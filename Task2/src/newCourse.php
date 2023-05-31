@@ -6,7 +6,7 @@
                                 VALUES (:title, :ucas, :gradlevel, :starting, :place, :descript, :satisfaction, :durfull, :durpart, :durfound, :ukfull, :ukpart, :ukfound, :intfull, :intfound, :work, :entalev, :entbtec, :enttlev, :foualev, :foubtec, :foutlev, :lang, :y1m1, :y1m1cr, :y1m2, :y1m2cr, :y1m3, :y1m3cr, :y1m4, :y1m4cr, :y1m5, :y1m5cr, :y1m6, :y1m6cr, :y2m1, :y2m1cr, :y2m2, :y2m2cr, :y2m3, :y2m3cr, :y2m4, :y2m4cr, :y2m5, :y2m5cr, :y2m6, :y2m6cr, :y3m1, :y3m1cr, :y3m2, :y3m2cr, :y3m3, :y3m3cr, :y3m4, :y3m4cr, :y3m5, :y3m5cr, :y3m6, :y3m6cr)');
         $values = [
             'title' => $_POST['course_title'], 'ucas' => $_POST['course_ucas_code'], 'gradlevel' => $_POST['course_level'], 'starting' => $_POST['course_start'],
-            'place' => $_POST['course_location'], 'descript' => $_POST['course_description'], 'satisfaction' => $_POST['student_satisfaction'],
+            'place' => $_POST['course_location'], 'descript' => $_POST['description'], 'satisfaction' => $_POST['satisfaction'],
             'durfull' => $_POST['duration_fulltime'], 'durpart' => $_POST['duration_parttime'], 'durfound' => $_POST['duration_foundation'],
             'ukfull' => $_POST['ukfees_fulltime'], 'ukpart' => $_POST['ukfees_parttime'], 'ukfound' => $_POST['ukfees_foundation'],
             'intfull' => $_POST['internationalfees_fulltime'], 'intfound' => $_POST['internationalfees_foundation'], 'work' => $_POST['workplacement'],
@@ -75,7 +75,7 @@
                     <label>UK Fees</label><br>
                     <div class="formrow1"><label>Fulltime</label> <input type="text" name="ukfees_fulltime"/><label>Parttime</label> <input type="text" name="ukfees_parttime"/><label>Foundation</label> <input type="text" name="ukfees_foundation"/></div>               
                     <label>International Fees</label><br>
-                    <div class="formrow1"><label>Fulltime</label> <input type="text" name="internationalfees_fulltime"/><label>Foundation</label> <input type="text" name="international_foundation"/></div>
+                    <div class="formrow1"><label>Fulltime</label> <input type="text" name="internationalfees_fulltime"/><label>Foundation</label> <input type="text" name="internationalfees_foundation"/></div>
                     <label>Work Placement Fee</label>
                     <input type="text" name="workplacement" />
                     <label>Entry Requirements</label><br>
