@@ -102,8 +102,13 @@ function showContents() {
                             "<li>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</li><li>The fee for an UK students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
                             "</li><li>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</li>" +
                             "<li>The fee for international students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</li>" +
-                            "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div><div id=\"modules\"><h3>Modules</h3>" + 
-                            ;
+                            "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div><div id=\"modules\"><h3>Modules</h3><p><strong>" + 
+                            data.courses[i].yearone.moduleone +"</strong></p><p>"+data.courses[i].yearone.descriptionone +"</p>"+ "<p><strong>" + 
+                            data.courses[i].yearone.moduletwo +"</strong></p><p>"+data.courses[i].yearone.descriptiontwo +"</p>"+ "<p><strong>" + 
+                            data.courses[i].yearone.modulethree +"</strong></p><p>"+data.courses[i].yearone.descriptionthree +"</p>"+"<p><strong>" + 
+                            data.courses[i].yearone.modulefour +"</strong></p><p>"+data.courses[i].yearone.descriptionfour +"</p>"+"<p><strong>" + 
+                            data.courses[i].yearone.modulefive +"</strong></p><p>"+data.courses[i].yearone.descriptionfive +"</p>"+"<p><strong>" + 
+                            data.courses[i].yearone.modulesix +"</strong></p><p>"+data.courses[i].yearone.descriptionsix +"</p>"+"</div>";
                         }
                     }    
                 }
