@@ -68,6 +68,33 @@
                                     }},
                                 "englishlanguagerequirements": {"type": "string"}
                             }},
+                        "yearone": {"type": "object",
+                            "properties":{
+                                "moduleone": {"type": "string"},
+                                "moduletwo": {"type": "string"},
+                                "modulethree": {"type": "string"},
+                                "modulefour": {"type": "string"},
+                                "modulefive": {"type": "string"},
+                                "modulesix": {"type": "string"}
+                            }},
+                        "yeartwo": {"type": "object",
+                            "properties":{
+                                "moduleone": {"type": "string"},
+                                "moduletwo": {"type": "string"},
+                                "modulethree": {"type": "string"},
+                                "modulefour": {"type": "string"},
+                                "modulefive": {"type": "string"},
+                                "modulesix": {"type": "string"}
+                            }},
+                        "yearthree": {"type": "object",
+                            "properties":{
+                                "moduleone": {"type": "string"},
+                                "moduletwo": {"type": "string"},
+                                "modulethree": {"type": "string"},
+                                "modulefour": {"type": "string"},
+                                "modulefive": {"type": "string"},
+                                "modulesix": {"type": "string"}
+                            }},
                         "studentsstatifiedwithcourse": {"type": "string"}
                     }
                 }
