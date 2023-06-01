@@ -282,7 +282,7 @@
                 }
             },
             "entryrequirements": {
-                "standard": "First or Second Class Honours degree from a UK University (or an international equivalent) in human resource management, or in business, commerce, management or related disciplines.",
+                "postgradentry": "First or Second Class Honours degree from a UK University (or an international equivalent) in human resource management, or in business, commerce, management or related disciplines.",
                 "englishlanguagerequirements": "Minimum standard: IELTS 6.5 (or equivalent) for study at postgraduate level."
             }
         },
@@ -318,7 +318,7 @@
                 }
             },
             "entryrequirements": {
-                "standard": "Second class degree in History or related discipline.",
+                "postgradentry": "Second class degree in History or related discipline.",
                 "englishlanguagerequirements": "IELTS 7.0 (or equivalent)"
             }
         },
@@ -356,7 +356,7 @@
                 }
             },
             "entryrequirements": {
-                "standard": "First or second class honours degree (or equivalent)",
+                "postgradentry": "First or second class honours degree (or equivalent)",
                 "englishlanguagerequirements": "IELTS 6.5 overall with a minimum of 6.0 in writing and 5.5 in all other skills."
             }
         },
@@ -392,7 +392,7 @@
                 }
             },
             "entryrequirements": {
-                "standard": "2:2 honours degree in a relevant subject area.",
+                "postgradentry": "2:2 honours degree in a relevant subject area.",
                 "englishlanguagerequirements": "IELTS 6.5 (or equivalent) with a minimum of 5.5 in all bands"
             }
         },
@@ -424,7 +424,7 @@
                 }
             },
             "entryrequirements": {
-                "standard": "first or second class bachelors degree.",
+                "postgradentry": "first or second class bachelors degree.",
                 "englishlanguagerequirements": "IELTS 6.5 overall (or equivalent)"
             }
         }

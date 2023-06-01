@@ -53,6 +53,7 @@
                             }},
                         "entryrequirements": {"type": "object",
                             "properties": {
+                                "postgradentry": {"type": "string"},
                                 "standard": {"type": "object",
                                     "properties": {
                                         "alevel": {"type": "string"},
