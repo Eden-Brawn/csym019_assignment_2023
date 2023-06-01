@@ -86,16 +86,16 @@ section .undertext{
                         "details details"
                         "entry tuition"
                         "modules duration";
-    text-align: left;
+    text-align: auto;
     margin-left: 4em;                    
 }
 #title{
     grid-area: title;
-    text-align: left;
+    text-align: auto;
 }
 #details{
     grid-area: details;
-    text-align: left;
+    text-align: auto;
 }
 #entry{
     grid-area: entry;
@@ -103,9 +103,9 @@ section .undertext{
 }
 #tuition{
     grid-area: tuition;
-    text-align: left;
+    text-align: auto;
 }
 #duration{
     grid-area: duration;
-    text-align: left;
+    text-align: auto;
 }
