@@ -96,13 +96,14 @@ function showContents() {
                             "<li>At BTEC: " + data.courses[i].entryrequirements.integratedfoundationyear.btec + "</li>" +
                             "<li>At T Level: " + data.courses[i].entryrequirements.integratedfoundationyear.tlevel + "</li></ul><p>Language Requirements:</p>" +
                             "<ul><li>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</li></ul></div>" +
+                            "<div id=\"duration\"><h3>Duration</h3><ul><li>Fulltime students will study for " + data.courses[i].duration.fulltime + "</li><li>Parttime students will study for " + data.courses[i].duration.parttime + 
+                            "</li><li>Fulltime students with a foundation year will study for " + data.courses[i].duration.fulltimefoundation + "</li></ul></div>" +
                             "<div id=\"tuition\"><h3>Tuition fees</h3><ul><li>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</li>" +
                             "<li>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</li><li>The fee for an UK students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
                             "</li><li>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</li>" +
                             "<li>The fee for international students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</li>" +
-                            "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div><div id=\"duration\"><h3>Duration</h3>" +
-                            "<ul><li>Fulltime students will study for " + data.courses[i].duration.fulltime + "</li><li>Parttime students will study for " + data.courses[i].duration.parttime + 
-                            "</li><li>Fulltime students with a foundation year will study for " + data.courses[i].duration.fulltimefoundation + "</li></ul></div>";
+                            "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div><div id=\"modules\"><h3>Modules</h3>" + 
+                            ;
                         }
                     }    
                 }

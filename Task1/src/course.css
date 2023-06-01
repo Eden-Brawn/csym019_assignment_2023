@@ -84,8 +84,9 @@ section .undertext{
     grid-template-rows: auto;
     grid-template-areas: "title title"
                         "details details"
-                        "entry tuition"
-                        "duration duration";
+                        "duration tuition"
+                        "entry entry"
+                        "modules modules";
     text-align: left;
     margin-left: 4em;                    
 }
