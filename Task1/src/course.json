@@ -48,6 +48,30 @@
                 },
                 "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
             },
+            "yearone": {
+                "moduleone": "ACC1025 Financial Skills for Business, Credits: 20",
+                "moduletwo": "ACC1026 Fundamentals of Management Accounting, Credits: 20",
+                "modulethree": "ACC1027 Practical Financial Accounting, Credits: 20",
+                "modulefour": "ACC1028 Responsible Accounting, Credits: 20",
+                "modulefive": "ACC1029 Corporate and Business Law, Credits: 20",
+                "modulesix": "ACC1030 Digital & Economic Environment, Credits: 20"
+            },
+            "yeartwo": {
+                "moduleone": "ACC2001 Financial Management, Credits: 20",
+                "moduletwo": "ACC2038 Digital Business and Finance, Credits: 20",
+                "modulethree": "ACC2040 Principles of Taxation, Credits: 20",
+                "modulefour": "ACC2041 Applied Financial Reporting, Credits: 20",
+                "modulefive": "ACC2042 Management Accounting for Decision Making, Credits: 20",
+                "modulesix": "ACC2043 The Professional Accountant, Credits: 20"
+            },
+            "yearthree": {
+                "moduleone": "CC3009 Corporate Finance (Compulsory)",
+                "moduletwo": "ACC3040 Financial Business Partnering (Compulsory)",
+                "modulethree": "ACC3041 International Financial Reporting (Compulsory)",
+                "modulefour": "ACC3042 Practical Auditing (Designated)",
+                "modulefive": "ACC3043 Strategy and Leadership (Designated)",
+                "modulesix": "ACC4010 Project (Compulsory)"
+            },
             "studentsstatifiedwithcourse": "55%"
         },
         {
@@ -97,6 +121,36 @@
                     "tlevel": "N/A"
                 },
                 "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
+            },
+            "yearone": {
+                "moduleone": "ACC1025 Financial Skills for Business, Credits: 20",
+                "descriptionone": "You will have the opportunity to collect, present, analyse and interpret numerical data. You will explore the basic concepts of business mathematics, financial models and statistical methods, which lay the foundation for application of quantitative techniques to support decision making.",
+                "moduletwo": "ACC1026 Fundamentals of Management Accounting, Credits: 20",
+                "descriptiontwo": "You will apply current and emerging management accounting tools and techniques for controlling, planning and decision making in the modern competitive organisational environment.",
+                "modulethree": "ACC1027 Practical Financial Accounting, Credits: 20",
+                "descriptionthree": "This module introduces you to terminology, concepts, principles, procedures and techniques of accounting. It provides an essential introduction to the preparation and presentation of financial statements and their relevance to stakeholders and other users.",
+                "modulefour": "ACC1028 Responsible Accounting, Credits: 20",
+                "descriptionfour": "You will explore the principles of responsible accounting built on the foundation of social and environmental justice to promote sustainability within organizations. By applying the sustainable development goals (SDGs), you will explore contemporary global issues related to the transition to responsible business within organisations at international and local levels.",
+                "modulefive": "ACC1029 Corporate and Business Law, Credits: 20",
+                "descriptionfive": "You will be introduced to the general legal framework related to a range of business activities and appreciate when to seek specialist legal advice.",
+                "modulesix": "ACC1030 Digital & Economic Environment, Credits: 20",
+                "descriptionsix": "You will investigate the economic and digital environment within which accountants and other managers operate. The module equips you with the skills for the use of technology in the management of data and creation of value for organisations."
+            },
+            "yeartwo": {
+                "moduleone": "ACC2001 Financial Management, Credits: 20",
+                "moduletwo": "ACC2038 Digital Business and Finance, Credits: 20",
+                "modulethree": "ACC2040 Principles of Taxation, Credits: 20",
+                "modulefour": "ACC2041 Applied Financial Reporting, Credits: 20",
+                "modulefive": "ACC2042 Management Accounting for Decision Making, Credits: 20",
+                "modulesix": "ACC2043 The Professional Accountant, Credits: 20"
+            },
+            "yearthree": {
+                "moduleone": "CC3009 Corporate Finance (Compulsory), Credits: 20",
+                "moduletwo": "ACC3040 Financial Business Partnering (Compulsory), Credits: 20",
+                "modulethree": "ACC3041 International Financial Reporting (Compulsory), Credits: 20",
+                "modulefour": "ACC3042 Practical Auditing (Designated), Credits: 20",
+                "modulefive": "ACC3043 Strategy and Leadership (Designated), Credits: 20",
+                "modulesix": "ACC4010 Project (Compulsory), Credits: 20"
             },
             "studentsstatifiedwithcourse": "85%"
         },
@@ -148,6 +202,48 @@
                 },
                 "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
             },
+            "yearone": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
+            },
+            "yeartwo": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
+            },
+            "yearthree": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
+            },
             "studentsstatifiedwithcourse": "83%"
         },
         {
@@ -198,6 +294,30 @@
                 },
                 "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
             },
+            "yearone": {
+                "moduleone": "",
+                "moduletwo": "",
+                "modulethree": "",
+                "modulefour": "",
+                "modulefive": "",
+                "modulesix": ""
+            },
+            "yeartwo": {
+                "moduleone": "",
+                "moduletwo": "",
+                "modulethree": "",
+                "modulefour": "",
+                "modulefive": "",
+                "modulesix": ""
+            },
+            "yearthree": {
+                "moduleone": "",
+                "moduletwo": "",
+                "modulethree": "",
+                "modulefour": "",
+                "modulefive": "",
+                "modulesix": ""
+            },
             "studentsstatifiedwithcourse": "33%"
         },
         {
@@ -247,6 +367,30 @@
                     "tlevel": "Pass"
                 },
                 "englishlanguagerequirements": "IELTS 6.0 with a minimum of 5.5 in all bands"
+            },
+            "yearone": {
+                "moduleone": "",
+                "moduletwo": "",
+                "modulethree": "",
+                "modulefour": "",
+                "modulefive": "",
+                "modulesix": ""
+            },
+            "yeartwo": {
+                "moduleone": "",
+                "moduletwo": "",
+                "modulethree": "",
+                "modulefour": "",
+                "modulefive": "",
+                "modulesix": ""
+            },
+            "yearthree": {
+                "moduleone": "",
+                "moduletwo": "",
+                "modulethree": "",
+                "modulefour": "",
+                "modulefive": "",
+                "modulesix": ""
             },
             "studentsstatifiedwithcourse": "79%"
         },
