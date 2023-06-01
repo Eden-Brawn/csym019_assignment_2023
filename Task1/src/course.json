@@ -50,27 +50,45 @@
             },
             "yearone": {
                 "moduleone": "ACC1025 Financial Skills for Business, Credits: 20",
+                "descriptionone": "",
                 "moduletwo": "ACC1026 Fundamentals of Management Accounting, Credits: 20",
+                "descriptiontwo": "",
                 "modulethree": "ACC1027 Practical Financial Accounting, Credits: 20",
+                "descriptionthree": "",
                 "modulefour": "ACC1028 Responsible Accounting, Credits: 20",
+                "descriptionfour": "",
                 "modulefive": "ACC1029 Corporate and Business Law, Credits: 20",
-                "modulesix": "ACC1030 Digital & Economic Environment, Credits: 20"
+                "descriptionfive": "",
+                "modulesix": "ACC1030 Digital & Economic Environment, Credits: 20",
+                "descriptionsix": ""
             },
             "yeartwo": {
                 "moduleone": "ACC2001 Financial Management, Credits: 20",
+                "descriptionone": "",
                 "moduletwo": "ACC2038 Digital Business and Finance, Credits: 20",
+                "descriptiontwo": "",
                 "modulethree": "ACC2040 Principles of Taxation, Credits: 20",
+                "descriptionthree": "",
                 "modulefour": "ACC2041 Applied Financial Reporting, Credits: 20",
+                "descriptionfour": "",
                 "modulefive": "ACC2042 Management Accounting for Decision Making, Credits: 20",
-                "modulesix": "ACC2043 The Professional Accountant, Credits: 20"
+                "descriptionfive": "",
+                "modulesix": "ACC2043 The Professional Accountant, Credits: 20",
+                "descriptionsix": ""
             },
             "yearthree": {
                 "moduleone": "CC3009 Corporate Finance (Compulsory)",
+                "descriptionone": "",
                 "moduletwo": "ACC3040 Financial Business Partnering (Compulsory)",
+                "descriptiontwo": "",
                 "modulethree": "ACC3041 International Financial Reporting (Compulsory)",
+                "descriptionthree": "",
                 "modulefour": "ACC3042 Practical Auditing (Designated)",
+                "descriptionfour": "",
                 "modulefive": "ACC3043 Strategy and Leadership (Designated)",
-                "modulesix": "ACC4010 Project (Compulsory)"
+                "descriptionfive": "",
+                "modulesix": "ACC4010 Project (Compulsory)",
+                "descriptionsix": ""
             },
             "studentsstatifiedwithcourse": "55%"
         },
@@ -138,19 +156,31 @@
             },
             "yeartwo": {
                 "moduleone": "ACC2001 Financial Management, Credits: 20",
+                "descriptionone": "",
                 "moduletwo": "ACC2038 Digital Business and Finance, Credits: 20",
+                "descriptiontwo": "",
                 "modulethree": "ACC2040 Principles of Taxation, Credits: 20",
+                "descriptionthree": "",
                 "modulefour": "ACC2041 Applied Financial Reporting, Credits: 20",
+                "descriptionfour": "",
                 "modulefive": "ACC2042 Management Accounting for Decision Making, Credits: 20",
-                "modulesix": "ACC2043 The Professional Accountant, Credits: 20"
+                "descriptionfive": "",
+                "modulesix": "ACC2043 The Professional Accountant, Credits: 20",
+                "descriptionsix": ""
             },
             "yearthree": {
-                "moduleone": "CC3009 Corporate Finance (Compulsory), Credits: 20",
-                "moduletwo": "ACC3040 Financial Business Partnering (Compulsory), Credits: 20",
-                "modulethree": "ACC3041 International Financial Reporting (Compulsory), Credits: 20",
-                "modulefour": "ACC3042 Practical Auditing (Designated), Credits: 20",
-                "modulefive": "ACC3043 Strategy and Leadership (Designated), Credits: 20",
-                "modulesix": "ACC4010 Project (Compulsory), Credits: 20"
+                "moduleone": "CC3009 Corporate Finance (Compulsory)",
+                "descriptionone": "",
+                "moduletwo": "ACC3040 Financial Business Partnering (Compulsory)",
+                "descriptiontwo": "",
+                "modulethree": "ACC3041 International Financial Reporting (Compulsory)",
+                "descriptionthree": "",
+                "modulefour": "ACC3042 Practical Auditing (Designated)",
+                "descriptionfour": "",
+                "modulefive": "ACC3043 Strategy and Leadership (Designated)",
+                "descriptionfive": "",
+                "modulesix": "ACC4010 Project (Compulsory)",
+                "descriptionsix": ""
             },
             "studentsstatifiedwithcourse": "85%"
         },
@@ -296,27 +326,45 @@
             },
             "yearone": {
                 "moduleone": "",
+                "descriptionone": "",
                 "moduletwo": "",
+                "descriptiontwo": "",
                 "modulethree": "",
+                "descriptionthree": "",
                 "modulefour": "",
+                "descriptionfour": "",
                 "modulefive": "",
-                "modulesix": ""
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             },
             "yeartwo": {
                 "moduleone": "",
+                "descriptionone": "",
                 "moduletwo": "",
+                "descriptiontwo": "",
                 "modulethree": "",
+                "descriptionthree": "",
                 "modulefour": "",
+                "descriptionfour": "",
                 "modulefive": "",
-                "modulesix": ""
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             },
             "yearthree": {
                 "moduleone": "",
+                "descriptionone": "",
                 "moduletwo": "",
+                "descriptiontwo": "",
                 "modulethree": "",
+                "descriptionthree": "",
                 "modulefour": "",
+                "descriptionfour": "",
                 "modulefive": "",
-                "modulesix": ""
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             },
             "studentsstatifiedwithcourse": "33%"
         },
@@ -370,27 +418,45 @@
             },
             "yearone": {
                 "moduleone": "",
+                "descriptionone": "",
                 "moduletwo": "",
+                "descriptiontwo": "",
                 "modulethree": "",
+                "descriptionthree": "",
                 "modulefour": "",
+                "descriptionfour": "",
                 "modulefive": "",
-                "modulesix": ""
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             },
             "yeartwo": {
                 "moduleone": "",
+                "descriptionone": "",
                 "moduletwo": "",
+                "descriptiontwo": "",
                 "modulethree": "",
+                "descriptionthree": "",
                 "modulefour": "",
+                "descriptionfour": "",
                 "modulefive": "",
-                "modulesix": ""
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             },
             "yearthree": {
                 "moduleone": "",
+                "descriptionone": "",
                 "moduletwo": "",
+                "descriptiontwo": "",
                 "modulethree": "",
+                "descriptionthree": "",
                 "modulefour": "",
+                "descriptionfour": "",
                 "modulefive": "",
-                "modulesix": ""
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             },
             "studentsstatifiedwithcourse": "79%"
         },
@@ -428,6 +494,20 @@
             "entryrequirements": {
                 "postgradentry": "First or Second Class Honours degree from a UK University (or an international equivalent) in human resource management, or in business, commerce, management or related disciplines.",
                 "englishlanguagerequirements": "Minimum standard: IELTS 6.5 (or equivalent) for study at postgraduate level."
+            },
+            "yearone": {
+                "moduleone": "Human Resource Management in Context, Credits: 20",
+                "descriptionone": "You will explore HRM in a business context to develop your understanding of the increasingly complex environments HR must work within both inside and external to organisations.  This module allows learners to develop analysis skills to facilitate informed choices on which strategies may be most and least appropriate.",
+                "moduletwo": "Leading, Managing and Developing People, Credits: 20",
+                "descriptiontwo": "You will analyse key factors in leading, managing and developing people for organisational success. Every organisation is made up of individuals whose behaviour, individually or collectively, will impact on its ability to succeed. Organisational performance can be enhanced and increased through the strategic management, leadership and development of people. This module enables you to gain an in-depth knowledge of HRM and HRD and explores major themes from the growing literature and research in this subject area.",
+                "modulethree": "International and Comparative HRM, Credits: 20",
+                "descriptionthree": "This module aims to provide students with knowledge and understanding to critically appraise the international context of strategic HRM. You will explore the complex social, economics and organisational institutions within which organisations compete and the implications for people management.",
+                "modulefour": "Resourcing and Developing Talent, Credits: 30",
+                "descriptionfour": "You will evaluate strategies for resourcing and developing talent within the organisation. You will consider the practical aspects of recruitment, selection, employee retention and dismissal and explore the strategic aspects of planning an organisation’s long and short term human resource requirements. This module requires analysis of external labour markets and considerations of flexibility, as well as an understanding of how internal labour markets can become more productive and effective. You will also develop a critical understanding of the role and influence of a range of contextual factors associated with the design, delivery and evaluation of learning and development in a variety of organisational contexts. You will explore and evaluate the contribution of learning and talent development strategies in meeting the ambitions and objectives of the organisation and the individual.",
+                "modulefive": "Employment Law and Relations, Credits: 30",
+                "descriptionfive": "You will develop and reflect upon your knowledge and understanding of Employment Relations from a number of different perspectives. The holistic significance of employment relations within an organisation is emphasised together with the importance of aligning HR policies with business strategy, change processes, employee voice and involvement practices. Good employee relations are important for an organisation’s success in the achievement of its business objectives and for gaining employee commitment to those objectives. Increasing legislation in this area has also brought pressure to develop appropriate managerial strategies to ensure employee commitment to organisational success. You will analyse key aspects of employment law relevant to the jurisdiction you work in and their practical implications for the operation of HR and management practice.",
+                "modulesix": "Dissertation and Research Methods, Credits: 60",
+                "descriptionsix": "In semesters 2 and 3 of your masters in HR, you will work on completing a 13,000-word dissertation. You will be supported through introductory class sessions on research methods and on-line materials and you will be allocated a supervisor who will guide and support you through this process."
             }
         },
         {
@@ -464,6 +544,20 @@
             "entryrequirements": {
                 "postgradentry": "Second class degree in History or related discipline.",
                 "englishlanguagerequirements": "IELTS 7.0 (or equivalent)"
+            },
+            "yearone": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             }
         },
         {
@@ -502,6 +596,20 @@
             "entryrequirements": {
                 "postgradentry": "First or second class honours degree (or equivalent)",
                 "englishlanguagerequirements": "IELTS 6.5 overall with a minimum of 6.0 in writing and 5.5 in all other skills."
+            },
+            "yearone": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             }
         },
         {
@@ -538,6 +646,20 @@
             "entryrequirements": {
                 "postgradentry": "2:2 honours degree in a relevant subject area.",
                 "englishlanguagerequirements": "IELTS 6.5 (or equivalent) with a minimum of 5.5 in all bands"
+            },
+            "yearone": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             }
         },
         {
@@ -570,6 +692,20 @@
             "entryrequirements": {
                 "postgradentry": "first or second class bachelors degree.",
                 "englishlanguagerequirements": "IELTS 6.5 overall (or equivalent)"
+            },
+            "yearone": {
+                "moduleone": "",
+                "descriptionone": "",
+                "moduletwo": "",
+                "descriptiontwo": "",
+                "modulethree": "",
+                "descriptionthree": "",
+                "modulefour": "",
+                "descriptionfour": "",
+                "modulefive": "",
+                "descriptionfive": "",
+                "modulesix": "",
+                "descriptionsix": ""
             }
         }
     ]
