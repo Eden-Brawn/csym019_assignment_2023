@@ -64,16 +64,16 @@ function showContents() {
                     txt += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td><img src=\"" + data.courses[i].image + "\"></td>" + "<td id=\"course\">" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
                     + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + 
                     data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + 
-                    "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>" + 
-                    "<td>" + data.courses[i].fees.ukfees.integratedfoundationyear + "</td>" + 
-                    "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.integratedfoundationyear + "</td>" + 
+                    "<td id=\"num\">" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td id=\"num\">" + data.courses[i].fees.ukfees.parttime + "</td>" + 
+                    "<td id=\"num\">" + data.courses[i].fees.ukfees.integratedfoundationyear + "</td>" + 
+                    "<td id=\"num\">" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td id=\"num\">" + data.courses[i].fees.internationalfees.integratedfoundationyear + "</td>" + 
                     "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
                     txt2 += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td><img src=\"" + data.courses[i].image + "\"></td>" + "<td id=\"course\">" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
                     + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
-                    + "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>"  
-                    +  "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.parttime + "</td>" 
+                    + "<td id=\"num\">" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td id=\"num\">" + data.courses[i].fees.ukfees.parttime + "</td>"  
+                    +  "<td id=\"num\">" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td id=\"num\">" + data.courses[i].fees.internationalfees.parttime + "</td>" 
                     + "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
             }
@@ -98,11 +98,11 @@ function showContents() {
                             "<ul><li>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</li></ul></div>" +
                             "<div id=\"duration\"><h3>Duration</h3><ul><li>Fulltime students will study for " + data.courses[i].duration.fulltime + "</li><li>Parttime students will study for " + data.courses[i].duration.parttime + 
                             "</li><li>Fulltime students with a foundation year will study for " + data.courses[i].duration.fulltimefoundation + "</li></ul></div>" +
-                            "<div id=\"tuition\"><h3>Tuition fees</h3><ul><li>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</li>" +
-                            "<li>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</li><li>The fee for an UK students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear +
-                            "</li><li>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</li>" +
+                            "<div id=\"tuition\"><h3>Tuition fees</h3><ul><li>The fee for a full time uk student: £" + data.courses[i].fees.ukfees.fulltime + "</li>" +
+                            "<li>The fee for a part time uk student: £" + data.courses[i].fees.ukfees.parttime + "</li><li>The fee for an UK students integrated foundation year: £" + data.courses[i].fees.ukfees.integratedfoundationyear +
+                            "</li><li>The fee for a full time international student: £" + data.courses[i].fees.internationalfees.fulltime + "</li>" +
                             "<li>The fee for international students integrated foundation year: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</li>" +
-                            "<li>The fee for a work placement year: " + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div><div id=\"modules\"><h3>Modules</h3><strong><p>Year 1</p></strong><p><strong>" + 
+                            "<li>The fee for a work placement year: £" + data.courses[i].fees.optionalworkplacementyear + "</li></ul></div><div id=\"modules\"><h3>Modules</h3><strong><p>Year 1</p></strong><p><strong>" + 
                             data.courses[i].yearone.moduleone +"</strong></p><p>"+data.courses[i].yearone.descriptionone +"</p>"+ "<p><strong>" + data.courses[i].yearone.moduletwo +"</strong></p><p>"+data.courses[i].yearone.descriptiontwo +"</p>"+ "<p><strong>" + 
                             data.courses[i].yearone.modulethree +"</strong></p><p>"+data.courses[i].yearone.descriptionthree +"</p>"+"<p><strong>" + data.courses[i].yearone.modulefour +"</strong></p><p>"+data.courses[i].yearone.descriptionfour +"</p>"+"<p><strong>" + 
                             data.courses[i].yearone.modulefive +"</strong></p><p>"+data.courses[i].yearone.descriptionfive +"</p>"+"<p><strong>" + data.courses[i].yearone.modulesix +"</strong></p><p>"+data.courses[i].yearone.descriptionsix +"</p>"+
@@ -126,10 +126,9 @@ function showContents() {
                             "<div id=\"details\"><h3>Details</h3><p>" + data.courses[i].description + "</p></div>" +
                             "<div id=\"entry\"><h3>Entry Requirements</h3><ul><li>At T Level: " + data.courses[i].entryrequirements.postgradentry +"</li></ul>" +
                             "<p>Language Requirements:</p><ul><li>International students require an " + data.courses[i].entryrequirements.englishlanguagerequirements + "</li></ul></div>" +
-                            "<div id=\"tuition\"><h3>Tuition fees</h3><ul><li>The fee for a full time uk student: " + data.courses[i].fees.ukfees.fulltime + "</li>" +
-                            "<li>The fee for a part time uk student: " + data.courses[i].fees.ukfees.parttime + "</li>" + 
-                            "</li><li>The fee for a full time international student: " + data.courses[i].fees.internationalfees.fulltime + "</li>" +
-                            "<li>The fee for part time international student: " + data.courses[i].fees.ukfees.integratedfoundationyear + "</li>" +
+                            "<div id=\"tuition\"><h3>Tuition fees</h3><ul><li>The fee for a full time uk student: £" + data.courses[i].fees.ukfees.fulltime + "</li>" +
+                            "<li>The fee for a part time uk student: £" + data.courses[i].fees.ukfees.parttime + "</li>" + 
+                            "</li><li>The fee for a full time international student: £" + data.courses[i].fees.internationalfees.fulltime + "</li>" +
                             "</div><div id=\"duration\"><h3>Duration</h3>" +
                             "<ul><li>Fulltime students will study for " + data.courses[i].duration.fulltime + "</li><li>Parttime students will study for " + data.courses[i].duration.parttime + 
                             "</ul></div><div id=\"modules\"><h3>Modules</h3><strong><p>Year 1</p></strong><p><strong>" + 
@@ -158,5 +157,13 @@ setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.or
     window.location.reload();
   }, 60000);
 
-
+function convert() {
+    let con = "pounds";
+    if(con == "pounds"){
+        let val = document.getElementById("num").innerHTML;
+        val = val * 1.16;
+        document.getElementById("num").innerHTML = val;
+    }
+}  
+document.getElementById("fees").addEventListener("click", convert);
   

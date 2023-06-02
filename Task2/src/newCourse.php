@@ -57,40 +57,10 @@
             </ul>
         </nav>
         <main>
-            <button id="add" type="button">Add New Course</button><!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
-            <button id="edit" type="button">Edit Course</button>
-            <button id="delete" type="button">Delete Course</button>
             <div class="addmore">
-                <h3>Enter A New Course Below</h3>    
-                <form action="newCourse.php" method="POST">
-                    <label>Course Title</label> <input type="text" name="course_title"/>
-                    <label>UCAS Code</label> <input type="text" name="course_ucas_code"/>
-                    <label>Course Level</label> <input type="text" name="course_level"/>
-                    <label>Starting Month/s</label> <input type="text" name="course_start"/>
-                    <label>Location</label> <input type="text" name="course_location"/>
-                    <label>Description</label> <textarea name="description" id="" cols="30" rows="10"></textarea><br><br>
-                    <label>Student Satisfaction</label> <input type="text" name="satisfaction"/>
-                    <label>Duration</label><br>
-                    <div class="formrow1"><label>Fulltime</label> <input type="text" name="duration_fulltime"/><label>Parttime</label> <input type="text" name="duration_parttime"/><label>Foundation</label> <input type="text" name="duration_foundation"/></div>
-                    <label>UK Fees</label><br>
-                    <div class="formrow1"><label>Fulltime</label> <input type="text" name="ukfees_fulltime"/><label>Parttime</label> <input type="text" name="ukfees_parttime"/><label>Foundation</label> <input type="text" name="ukfees_foundation"/></div>               
-                    <label>International Fees</label><br>
-                    <div class="formrow1"><label>Fulltime</label> <input type="text" name="internationalfees_fulltime"/><label>Foundation</label> <input type="text" name="internationalfees_foundation"/></div>
-                    <label>Work Placement Fee</label>
-                    <input type="text" name="workplacement" />
-                    <label>Entry Requirements</label><br>
-                    <div class="formrow1"><label>A Level</label> <input type="text" name="entry_alevel"/><label>BTEC</label> <input type="text" name="entry_btec"/><label>T Level</label> <input type="text" name="entry_tlevel"/></div>
-                    <label>Foundation Requirements</label><br>
-                    <div class="formrow1"><label>A Level</label> <input type="text" name="foundation_alevel"/><label>BTEC</label> <input type="text" name="foundation_btec"/><label>T Level</label> <input type="text" name="foundation_tlevel"/></div>
-                    <label>Language Requirements</label>
-                    <input type="text" name="language" />
-                    <label>Year 1</label>
-                    <div class="formrow1"><label>Module 1</label> <input type="text" name="y1_m1"/><label>Credits</label> <input type="text" name="y1_m1_cr"/><label>Module 2</label> <input type="text" name="y1_m2"/><label>Credits</label> <input type="text" name="y1_m2_cr"/><label>Module 3</label> <input type="text" name="y1_m3"/><label>Credits</label> <input type="text" name="y1_m3_cr"/><label>Module 4</label> <input type="text" name="y1_m4"/><label>Credits</label> <input type="text" name="y1_m4_cr"/><label>Module 5</label> <input type="text" name="y1_m5"/><label>Credits</label> <input type="text" name="y1_m5_cr"/><label>Module 6</label> <input type="text" name="y1_m6"/><label>Credits</label> <input type="text" name="y1_m6_cr"/></div>
-                    <label>Year 2</label>
-                    <div class="formrow1"><label>Module 1</label> <input type="text" name="y2_m1"/><label>Credits</label> <input type="text" name="y2_m1_cr"/><label>Module 2</label> <input type="text" name="y2_m2"/><label>Credits</label> <input type="text" name="y2_m2_cr"/><label>Module 3</label> <input type="text" name="y2_m3"/><label>Credits</label> <input type="text" name="y2_m3_cr"/><label>Module 4</label> <input type="text" name="y2_m4"/><label>Credits</label> <input type="text" name="y2_m4_cr"/><label>Module 5</label> <input type="text" name="y2_m5"/><label>Credits</label> <input type="text" name="y2_m5_cr"/><label>Module 6</label> <input type="text" name="y2_m6"/><label>Credits</label> <input type="text" name="y2_m6_cr"/></div>
-                    <label>Year 3</label>
-                    <div class="formrow1"><label>Module 1</label> <input type="text" name="y3_m1"/><label>Credits</label> <input type="text" name="y3_m1_cr"/><label>Module 2</label> <input type="text" name="y3_m2"/><label>Credits</label> <input type="text" name="y3_m2_cr"/><label>Module 3</label> <input type="text" name="y3_m3"/><label>Credits</label> <input type="text" name="y3_m3_cr"/><label>Module 4</label> <input type="text" name="y3_m4"/><label>Credits</label> <input type="text" name="y3_m4_cr"/><label>Module 5</label> <input type="text" name="y3_m5"/><label>Credits</label> <input type="text" name="y3_m5_cr"/><label>Module 6</label> <input type="text" name="y3_m6"/><label>Credits</label> <input type="text" name="y3_m6_cr"/></div>
-                    <input type="submit" name="submitnew" value="Add Course" />  
+                <h3>Add A New Course Below</h3>    
+                <form action="editDeleteCourse.php" method="POST">
+                    <input type="submit" name="addcourse" value="Add Course" />  
                 </form>
             </div>  
             <div class="editcourse">
