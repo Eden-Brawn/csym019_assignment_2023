@@ -27,9 +27,10 @@ table{
     margin: auto; /*How to center content from https://www.javatpoint.com/how-to-center-a-table-in-css#:~:text=By%20default%2C%20the%20alignment%20of,browsers%20show%20the%20table%20centered.*/
     box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.411);
     padding: 1em;
+    background-color: rgba(230,230,230,255);
 }
 tr{
-    background-color: white;
+    background-color: rgba(230,230,230,255);
 }
 body{
     background-color:white;

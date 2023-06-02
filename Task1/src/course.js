@@ -70,7 +70,7 @@ function showContents() {
                     "<td>" + data.courses[i].location + "</td>" + "</tr></tbody>";
                 }
                 if(data.courses[i].level == "Postgraduate"){
-                    txt2 += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td id=\"course\">" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
+                    txt2 += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td><img src=\"" + data.courses[i].image + "\"></td>" + "<td id=\"course\">" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].starting + "</td>" 
                     + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + data.courses[i].duration.parttime + "</td>" 
                     + "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>"  
                     +  "<td>" + data.courses[i].fees.internationalfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.internationalfees.parttime + "</td>" 

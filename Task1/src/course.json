@@ -95,6 +95,7 @@
         },
         {
             "id": 2,
+            "image": "images/accounting.png",
             "course": "Accounting and Finance BSc (Hons)",
             "ucascode": "N420",
             "level": "Undergraduate",
@@ -187,6 +188,7 @@
         },
         {
             "id": 3,
+            "image": "images/advertising.png",
             "course": "Advertising & Digital Marketing BA (Hons)",
             "ucascode": "N564",
             "level": "Undergraduate",
@@ -279,6 +281,7 @@
         },
         {
             "id": 4,
+            "image": "images/architechture.png",
             "course": "Architectural Technology BSc (Hons)",
             "ucascode": "K210",
             "level": "Undergraduate",
@@ -371,6 +374,7 @@
         },
         {
             "id": 5,
+            "image": "images/criminal.png",
             "course": "Criminal and Corporate Investigation BA (Hons)",
             "ucascode": "L438",
             "level": "Undergraduate",
@@ -463,6 +467,7 @@
         },
         {
             "id": 6,
+            "image": "images/human.png",
             "course": "Human Resource Management MA",
             "level": "Postgraduate",
             "description": "The Human Resource Management MA course modules are designed to provide you with expert knowledge of distinct HR subject areas combined with exposure to contemporary debates, policies and practices, keeping you at the forefront of developments in your field. You will develop an understanding of HRM within a range of organisational contexts, and you will be equipped with the analytical and diagnostic skills required of HR professionals in the workplace",
@@ -513,6 +518,7 @@
         },
         {
             "id": 7,
+            "image": "images/history.png",
             "course": "History MA",
             "level": "Postgraduate",
             "description": "Our distance learning History MA is taught online on a full-time and part-time basis, with the opportunity to complete in one and two years respectively. The year is split into three trimesters. You will develop the skills necessary to understand, critique, utilise and communicate concepts and theories used within the discipline of History. You will acquire methodological skills for historical research, particularly the selection, evaluation and interpretation of primary sources. The course comprises 120 credits of taught modules and a 60 credit dissertation. Students must take the History Research Methods module and complete a dissertation. The remainder of the programme is made up from a selection of specialist modules (normally three 30 credit modules) which reflect staff research expertise.",
@@ -563,6 +569,7 @@
         },
         {
             "id": 8,
+            "image": "images/project.png",
             "course": "Project Management MSc",
             "level": "Postgraduate",
             "description": "Our Project Management Masters is designed to address the growing complexity of projects and incorporates key tools and techniques. You’ll gain an understanding of the core competencies required to drive a successful conclusion, as well as an appreciation of using a more holistic, international and ethical stakeholder project management approach. When you choose to study MSc Project Management at the University of Northampton, you will benefit from the teaching of supportive and dedicated teaching staff with real industry experience. You will also have the opportunity to gain additional, highly-regarded professional project management qualifications in PRINCE2 Foundation, PRINCE2 Practitioner and Agile Project Management Foundation.",
@@ -615,6 +622,7 @@
         },
         {
             "id": 9,
+            "image": "images/strength.png",
             "course": "Strength and Conditioning MSc",
             "level": "Postgraduate",
             "description": "The Strength and Conditioning MSc course will examine advanced and current aspects of strength and conditioning – exploring the science behind S&C – such as the development of strength, speed and power. The practical training sessions are designed to help you develop the skills and knowledge required to become an applied practitioner. The course will culminate with you conducting a research project, allowing you to demonstrate an advanced understanding of the research process. You will complete the project with the intention of submitting your findings to relevant conferences and journals for publication.",
@@ -665,6 +673,7 @@
         },
         {
             "id": 10,
+            "image": "images/counseling.png",
             "course": "Counselling MSc",
             "level": "Postgraduate",
             "description": "The Counselling MSc at UON has been designed to contribute towards achieving the following United Nations Sustainable Development Goal: SDG3 Good Health and Wellbeing. This Masters in Counselling course will help you to achieve sufficient communication skills as well as personal development skills which are useful and applicable to a number of organisations and situations. Students will be integrated into the learning process partnered with a supportive and motivational environment.",
