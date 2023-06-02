@@ -17,9 +17,11 @@ footer {
     margin-top: 2em;
     background: linear-gradient(to bottom, rgba(17,16,14,255) 97.5%, rgba(220,199,0,255) 2.5%);
     box-shadow: 0px 0px 7px  black;
+    text-align: left;
 }
-footer h3{
+footer h2{
     color: white;
+    text-align: left;
 }
 footer p {
     color: white;
