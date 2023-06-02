@@ -33,8 +33,8 @@ function showContents() {
             "<th rowspan=\"2\">UCAS Code</th>" + 
             "<th rowspan=\"2\">Starting Month</th>" + 
             "<th colspan=\"3\">Duration</th>"+
-            "<th colspan=\"3\">UK Fees</th>" +
-            "<th colspan=\"2\">International Fees</th>" +
+            "<th id=\"fees\" colspan=\"3\">UK Fees</th>" +
+            "<th id=\"fees\" colspan=\"2\">International Fees</th>" +
             "<th rowspan=\"2\">Location</th>" + 
             "<tr><th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
@@ -49,8 +49,8 @@ function showContents() {
             "<thead><tr><th rowspan=\"2\"></th><th rowspan=\"2\">Course</th>"+
             "<th rowspan=\"2\">Starting Month</th>" + 
             "<th colspan=\"2\">Duration</th>"+
-            "<th colspan=\"2\">UK Fees</th>" +
-            "<th colspan=\"2\">International Fees</th>" +
+            "<th id=\"fees\" colspan=\"2\">UK Fees</th>" +
+            "<th id=\"fees\" colspan=\"2\">International Fees</th>" +
             "<th rowspan=\"2\">Location</th>" +
             "<tr><th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Part Time</th>" + 
