@@ -8,9 +8,6 @@ session_start();
     <head>
         <title>Course Report</title>
         <link rel="stylesheet" href="layout.css">
-        <!--https://www.chartjs.org/docs/latest/getting-started/-->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="course.js"></script>
     </head>
     <body>
         <header>
@@ -26,9 +23,7 @@ session_start();
         <main>
         <?php if(isset($_SESSION['logged'])){ ?>
             <h3>Sample Course Reoprt</h3>
-            <div class="sketch">
-                
-            </div>
+            
             <form action="sampleCourseReport.php" method="post">
                 <div class="container"> 
                 <?php
@@ -80,15 +75,14 @@ session_start();
                         
                     }
                     echo '</table>';
+                    
                 ?>
+                
                 </div>
             </form>
-            <div>
-                <canvas id="myChart" width="200" height="200"></canvas>
-            </div>
             <?php } 
         else{ echo '<p>Please Login Click Here: </p>'?> 
-            <div class="addmore">
+            <div>
                 <form action="signinsignup.php" method="POST">
                     <input type="submit" name="login" value="login Please" />  
                 </form>
@@ -98,5 +92,5 @@ session_start();
         ?> 
         </main>
         <footer>&copy; CSYM019 2023</footer>
-    </body>
+    </body>  
 </html>

@@ -1,15 +1,15 @@
 <?php
 session_start();
     require 'mySql.php';
-    if(isset($_POST['signin'])){/*sign in to the website*/
+    if(isset($_POST['signin'])){
         $search = $pdo->prepare('SELECT * FROM admins WHERE admin_name = :adminname');
         $values = [
             'adminname' => $_POST['admin']
         ];
         $search->execute($values);
         $entry = $search->fetch();
-        if (password_verify($_POST['pass'], $entry['admin_password'])) {/*As the password is hashed we will have to use a different method to compare them*/
-            $_SESSION['logged'] = true; /*set the session*/
+        if (password_verify($_POST['pass'], $entry['admin_password'])) {
+            $_SESSION['logged'] = true; 
             header("location:newCourse.php");
         }
         else{
@@ -19,10 +19,10 @@ session_start();
     
     
     if(isset($_POST['signup'])){
-        $add = $pdo->prepare('INSERT INTO admins (admin_name, admin_password) /*sign up page so insert it into the database*/
+        $add = $pdo->prepare('INSERT INTO admins (admin_name, admin_password) 
                                 VALUES (:adminnew, :passnew)');
-            $_SESSION['logged'] = true; /*sets sessions*/
-            $passwordhash = password_hash($_POST['passnew'], PASSWORD_DEFAULT);/*use the taught hash to encrypt the password*/
+            $_SESSION['logged'] = true; 
+            $passwordhash = password_hash($_POST['passnew'], PASSWORD_DEFAULT);
             $new = [
                 'adminnew' => $_POST['adminnew'],
                 'passnew' => $passwordhash

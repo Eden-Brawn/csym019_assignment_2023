@@ -27,11 +27,20 @@ session_start();
             $delete->execute($values);
     }
     if(isset($_POST['altercourse'])){
-        $course = $pdo->prepare('UPDATE course SET course_title = :title, course_ucas_code = :ucas, course_level = :gradlevel WHERE course_id = :edit');
+        $course = $pdo->prepare('UPDATE course 
+                                SET course_title = :title, course_ucas_code = :ucas, course_level = :gradlevel, course_start = :starting, location = :place, course_description = :descript, course_satisfaction = :satisfaction, duration_fulltime = :durfull, duration_parttime = :durpart, duration_foundation = :durfound, uk_fees_fulltime = :ukfull, uk_fees_parttime = :ukpart, uk_fees_foundation = :ukfound, international_fees_fulltime = :intfull, international_fees_foundation = :intfound, work_placement = :work, entry_grades_alevel = :entalev, foundation_grades_btec = :entbtec, foundation_grades_tlevel = :enttlev, foundation_grades_alevel = :foualev, foundation_grades_btec = :foubtec, foundation_grades_tlevel = :foutlev, language_requirements = :lang, year1_module1 = :y1m1, y1_m1_credits = :y1m1cr, year1_module2 = :y1m2, y1_m2_credits = :y1m2cr, year1_module3 = :y1m3, y1_m3_credits = :y1m3cr, year1_module4 = :y1m4, y1_m4_credits = :y1m4cr, year1_module5 = :y1m5, y1_m5_credits = :y1m5cr, year1_module6 = :y1m6, y1_m6_credits = :y1m6cr, year2_module1 = :y2m1, y2_m1_credits = :y2m1cr, year2_module2 = :y2m2, y2_m2_credits = :y2m2cr, year2_module3 = :y2m3, y2_m3_credits = :y2m3cr, year2_module4 = :y2m4, y2_m4_credits = :y2m4cr, year2_module5 = :y2m5, y2_m5_credits = :y2m5cr, year2_module6 = :y2m6, y2_m6_credits = :y2m6cr, year3_module1 = :y3m1, y3_m1_credits = :y3m1cr, year3_module2 = :y3m2, y3_m2_credits = :y3m2cr, year3_module3 = :y3m3, y3_m3_credits = :y3m3cr, year3_module4 = :y3m4, y3_m4_credits = :y3m4cr, year3_module5 = :y3m5, y3_m5_credits = :y3m5cr, year3_module6 = :y3m6, y3_m6_credits = :y3m6cr 
+                                WHERE course_id = :edit');
         $edit = [
-            'title' => $_POST['title'],
-            'ucas' => $_POST['ucas'],
-            'gradlevel' => $_POST['level'],
+            'title' => $_POST['course_title'], 'ucas' => $_POST['course_ucas_code'], 'gradlevel' => $_POST['course_level'], 'starting' => $_POST['course_start'],
+            'place' => $_POST['course_location'], 'descript' => $_POST['description'], 'satisfaction' => $_POST['satisfaction'],
+            'durfull' => $_POST['duration_fulltime'], 'durpart' => $_POST['duration_parttime'], 'durfound' => $_POST['duration_foundation'],
+            'ukfull' => $_POST['ukfees_fulltime'], 'ukpart' => $_POST['ukfees_parttime'], 'ukfound' => $_POST['ukfees_foundation'],
+            'intfull' => $_POST['internationalfees_fulltime'], 'intfound' => $_POST['internationalfees_foundation'], 'work' => $_POST['workplacement'],
+            'entalev' => $_POST['entry_alevel'], 'entbtec' => $_POST['entry_btec'], 'enttlev' => $_POST['entry_tlevel'],
+            'foualev' => $_POST['foundation_alevel'], 'foubtec' => $_POST['foundation_btec'], 'foutlev' => $_POST['foundation_tlevel'], 'lang' => $_POST['language'],
+            'y1m1' => $_POST['y1_m1'], 'y1m1cr' => $_POST['y1_m1_cr'], 'y1m2' => $_POST['y1_m2'], 'y1m2cr' => $_POST['y1_m2_cr'], 'y1m3' => $_POST['y1_m3'], 'y1m3cr' => $_POST['y1_m3_cr'],  'y1m4' => $_POST['y1_m4'], 'y1m4cr' => $_POST['y1_m4_cr'], 'y1m5' => $_POST['y1_m5'], 'y1m5cr' => $_POST['y1_m5_cr'], 'y1m6' => $_POST['y1_m6'], 'y1m6cr' => $_POST['y1_m6_cr'],
+            'y2m1' => $_POST['y2_m1'], 'y2m1cr' => $_POST['y2_m1_cr'], 'y2m2' => $_POST['y2_m2'], 'y2m2cr' => $_POST['y2_m2_cr'], 'y2m3' => $_POST['y2_m3'], 'y2m3cr' => $_POST['y2_m3_cr'],  'y2m4' => $_POST['y2_m4'], 'y2m4cr' => $_POST['y2_m4_cr'], 'y2m5' => $_POST['y2_m5'], 'y2m5cr' => $_POST['y2_m5_cr'], 'y2m6' => $_POST['y2_m6'], 'y2m6cr' => $_POST['y2_m6_cr'],
+            'y3m1' => $_POST['y3_m1'], 'y3m1cr' => $_POST['y3_m1_cr'], 'y3m2' => $_POST['y3_m2'], 'y3m2cr' => $_POST['y3_m2_cr'], 'y3m3' => $_POST['y3_m3'], 'y3m3cr' => $_POST['y3_m3_cr'],  'y3m4' => $_POST['y3_m4'], 'y3m4cr' => $_POST['y3_m4_cr'], 'y3m5' => $_POST['y3_m5'], 'y3m5cr' => $_POST['y3_m5_cr'], 'y3m6' => $_POST['y3_m6'], 'y3m6cr' => $_POST['y3_m6_cr'],
             'edit' => $_GET['edit']
 
         ];

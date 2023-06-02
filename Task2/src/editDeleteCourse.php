@@ -67,7 +67,7 @@ session_start();
         $course ->execute($edit);
         foreach ($course as $row){
             echo '<div class="addmore"><h2>Edit '. $row['course_title'].'</h2>
-            <form action="newCourse.php?'. $row['course_id'] .'" method="POST">
+            <form action="newCourse.php?edit='. $row['course_id'] .'" method="POST">
                     <label>Course Title</label> <input type="text" name="course_title" value="'.$row['course_title'].'"/>
                     <label>UCAS Code</label> <input type="text" name="course_ucas_code" value="'.$row['course_ucas_code'].'"/>
                     <label>Course Level</label> <input type="text" name="course_level" value="'.$row['course_level'].'"/>
@@ -95,7 +95,7 @@ session_start();
                     <div class="formrow1"><label>Module 1</label> <input type="text" name="y2_m1" value="'.$row['year2_module1'].'"/><label>Credits</label> <input type="text" name="y2_m1_cr" value="'.$row['y2_m1_credits'].'"/><label>Module 2</label> <input type="text" name="y2_m2" value="'.$row['year2_module2'].'"/><label>Credits</label> <input type="text" name="y2_m2_cr" value="'.$row['y2_m2_credits'].'"/><label>Module 3</label> <input type="text" name="y2_m3" value="'.$row['year2_module3'].'"/><label>Credits</label> <input type="text" name="y2_m3_cr" value="'.$row['y2_m3_credits'].'"/><label>Module 4</label> <input type="text" name="y2_m4" value="'.$row['year2_module4'].'"/><label>Credits</label> <input type="text" name="y2_m4_cr" value="'.$row['y2_m4_credits'].'"/><label>Module 5</label> <input type="text" name="y2_m5" value="'.$row['year2_module5'].'"/><label>Credits</label> <input type="text" name="y2_m5_cr" value="'.$row['y2_m5_credits'].'"/><label>Module 6</label> <input type="text" name="y2_m6" value="'.$row['year2_module6'].'"/><label>Credits</label> <input type="text" name="y2_m6_cr" value="'.$row['y2_m1_credits'].'"/></div>
                     <label>Year 3</label>
                     <div class="formrow1"><label>Module 1</label> <input type="text" name="y3_m1" value="'.$row['year3_module1'].'"/><label>Credits</label> <input type="text" name="y3_m1_cr" value="'.$row['y3_m1_credits'].'"/><label>Module 2</label> <input type="text" name="y3_m2"  value="'.$row['year3_module2'].'"/><label>Credits</label> <input type="text" name="y3_m2_cr" value="'.$row['y3_m2_credits'].'"/><label>Module 3</label> <input type="text" name="y3_m3" value="'.$row['year3_module3'].'"/><label>Credits</label> <input type="text" name="y3_m3_cr" value="'.$row['y3_m3_credits'].'"/><label>Module 4</label> <input type="text" name="y3_m4" value="'.$row['year3_module4'].'"/><label>Credits</label> <input type="text" name="y3_m4_cr" value="'.$row['y3_m4_credits'].'"/><label>Module 5</label> <input type="text" name="y3_m5" value="'.$row['year3_module5'].'"/><label>Credits</label> <input type="text" name="y3_m5_cr" value="'.$row['y3_m5_credits'].'"/><label>Module 6</label> <input type="text" name="y3_m6" value="'.$row['year3_module6'].'"/><label>Credits</label> <input type="text" name="y3_m6_cr" value="'.$row['y3_m1_credits'].'"/></div>
-                    <input type="submit" name="submitnew" value="Add Course" />  
+                    <input type="submit" name="altercourse" value="Edit Course" />  
                 </form></div>';
         }
     }

@@ -179,4 +179,8 @@ thead, th{
     min-width: 1em;
     text-align: center;
 }
-
+#cntlSize {
+    width: 30%;
+    height: 20%;
+    padding: 20px 20px 20px 20px;
+}
