@@ -29,7 +29,7 @@
             <label>Course Level</label> <input type="text" name="course_level"/>
             <label>Starting Month/s</label> <input type="text" name="course_start"/>
             <label>Location</label> <input type="text" name="course_location"/>
-            <label>Description</label> <textarea name="description" id="" cols="30" rows="10"></textarea><br><br>
+            <label>Description</label> <textarea name="description" id="" cols="30" rows="50"></textarea><br><br>
             <label>Student Satisfaction</label> <input type="text" name="satisfaction"/>
             <label>Duration</label><br>
             <div class="formrow1"><label>Fulltime</label> <input type="text" name="duration_fulltime"/><label>Parttime</label> <input type="text" name="duration_parttime"/><label>Foundation</label> <input type="text" name="duration_foundation"/></div>
