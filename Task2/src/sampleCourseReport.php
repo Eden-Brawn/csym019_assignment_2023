@@ -7,6 +7,8 @@
     <head>
         <title>Course Report</title>
         <link rel="stylesheet" href="layout.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script><!--https://www.chartjs.org/docs/latest/getting-started/-->
+        <script src="course.js"></script>
     </head>
     <body>
         <header>
@@ -77,10 +79,8 @@
                 ?>
                 </div>
             </form>
-            
-            <div class="addmore">
-                <p class="note">The sketch above provides a sample report based on the selection of TWO courses.</p>
-                <p class="blueNote">IMPORTANT NOTE: ALL CHARTS MUST BE CREATED USING THE <a href="https://www.chartjs.org">Chartjs</a> LIBRARY.</p>
+            <div id="cntlSize">
+                <canvas id="myChart" width="200" height="200"></canvas>
             </div>
         </main>
         <footer>&copy; CSYM019 2023</footer>
