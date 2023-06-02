@@ -2,6 +2,7 @@
     "courses": [
         {
             "id": 1,
+            "image": "images/computing.png",
             "course": "Business Computing BSc (Hons)",
             "ucascode": "G503",
             "level": "Undergraduate",

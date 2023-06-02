@@ -28,8 +28,8 @@ function showContents() {
     if (xhr.readyState == 4) {
         if (xhr.status == 200) {
             let data = JSON.parse(xhr.responseText);//thead, tbody adn sub headings https://stackoverflow.com/questions/22702825/create-a-table-with-sub-headings-and-side-headings
-            let txt = "<col><col><col><colgroup span=\"3\"></colgroup><colgroup span=\"3\"></colgroup><colgroup span=\"2\"></colgroup>" + //colgroup col rowspan colspan from https://jsfiddle.net/SyedFayaz/ud0mpgoh/7/
-            "<thead><tr><th rowspan=\"2\">Course</th>"+
+            let txt = "<col><col><col><col><colgroup span=\"3\"></colgroup><colgroup span=\"3\"></colgroup><colgroup span=\"2\"></colgroup>" + //colgroup col rowspan colspan from https://jsfiddle.net/SyedFayaz/ud0mpgoh/7/
+            "<thead><tr><th rowspan=\"2\"></th><th rowspan=\"2\">Course</th>"+
             "<th rowspan=\"2\">UCAS Code</th>" + 
             "<th rowspan=\"2\">Starting Month</th>" + 
             "<th colspan=\"3\">Duration</th>"+
@@ -45,8 +45,8 @@ function showContents() {
             "<th scope=\"col\">Full Time</th>" + 
             "<th scope=\"col\">Foundation</th></tr>"+
             "</tr></thead>";//th came from https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
-            let txt2 = "<col><col><colgroup span=\"2\"></colgroup><colgroup span=\"2\"></colgroup><colgroup span=\"2\"></colgroup>" +
-            "<thead><tr><th rowspan=\"2\">Course</th>"+
+            let txt2 = "<col><col><col><colgroup span=\"2\"></colgroup><colgroup span=\"2\"></colgroup><colgroup span=\"2\"></colgroup>" +
+            "<thead><tr><th rowspan=\"2\"></th><th rowspan=\"2\">Course</th>"+
             "<th rowspan=\"2\">Starting Month</th>" + 
             "<th colspan=\"2\">Duration</th>"+
             "<th colspan=\"2\">UK Fees</th>" +
@@ -61,7 +61,7 @@ function showContents() {
             "</tr></thead>"; 
             for (let i=0; i < data.courses.length; i++) {
                 if(data.courses[i].level == "Undergraduate"){
-                    txt += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td id=\"course\">" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
+                    txt += "<tbody><tr id=\"" + data.courses[i].course + "\">" + "<td><img src=\"" + data.courses[i].image + "\"></td>" + "<td id=\"course\">" + data.courses[i].course + "</td>" + "<td>" + data.courses[i].ucascode + "</td>" 
                     + "<td>" + data.courses[i].starting + "</td>" + "<td>" + data.courses[i].duration.fulltime + "</td>" + "<td>" + 
                     data.courses[i].duration.parttime + "</td>" + "<td>" + data.courses[i].duration.fulltimefoundation + "</td>" + 
                     "<td>" + data.courses[i].fees.ukfees.fulltime + "</td>" + "<td>" + data.courses[i].fees.ukfees.parttime + "</td>" + 
