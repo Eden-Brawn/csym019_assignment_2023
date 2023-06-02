@@ -18,9 +18,9 @@
     }
     
     
-    if(isset($_POST['userssignup'])){
+    if(isset($_POST['signup'])){
         $add = $pdo->prepare('INSERT INTO admins (admin_name, admin_password) /*sign up page so insert it into the database*/
-                                        VALUES (:adminnew, :passnew)');
+                                VALUES (:adminnew, :passnew)');
             $_SESSION['logged'] = true; /*sets sessions*/
             //$_SESSION['user'] = $_POST['usersname'];
             $passwordhash = password_hash($_POST['passnew'], PASSWORD_DEFAULT);/*use the taught hash to encrypt the password*/

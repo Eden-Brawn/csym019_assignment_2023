@@ -1,6 +1,5 @@
 <?php
     require 'mySql.php';
-
     if (isset($_POST['submitnew'])) {
         $stmt = $pdo->prepare('INSERT INTO course (course_title, course_ucas_code, course_level, course_start, location, course_description, course_satisfaction, duration_fulltime, duration_parttime, duration_foundation, uk_fees_fulltime, uk_fees_parttime, uk_fees_foundation, international_fees_fulltime, international_fees_foundation, work_placement, entry_grades_alevel, entry_grades_btec, entry_grades_tlevel, foundation_grades_alevel, foundation_grades_btec, foundation_grades_tlevel, language_requirements, year1_module1, y1_m1_credits, year1_module2, y1_m2_credits, year1_module3, y1_m3_credits, year1_module4, y1_m4_credits, year1_module5, y1_m5_credits, year1_module6, y1_m6_credits, year2_module1, y2_m1_credits, year2_module2, y2_m2_credits, year2_module3, y2_m3_credits, year2_module4, y2_m4_credits, year2_module5, y2_m5_credits, year2_module6, y2_m6_credits, year3_module1, y3_m1_credits, year3_module2, y3_m2_credits, year3_module3, y3_m3_credits, year3_module4, y3_m4_credits, year3_module5, y3_m5_credits, year3_module6, y3_m6_credits) 
                                 VALUES (:title, :ucas, :gradlevel, :starting, :place, :descript, :satisfaction, :durfull, :durpart, :durfound, :ukfull, :ukpart, :ukfound, :intfull, :intfound, :work, :entalev, :entbtec, :enttlev, :foualev, :foubtec, :foutlev, :lang, :y1m1, :y1m1cr, :y1m2, :y1m2cr, :y1m3, :y1m3cr, :y1m4, :y1m4cr, :y1m5, :y1m5cr, :y1m6, :y1m6cr, :y2m1, :y2m1cr, :y2m2, :y2m2cr, :y2m3, :y2m3cr, :y2m4, :y2m4cr, :y2m5, :y2m5cr, :y2m6, :y2m6cr, :y3m1, :y3m1cr, :y3m2, :y3m2cr, :y3m3, :y3m3cr, :y3m4, :y3m4cr, :y3m5, :y3m5cr, :y3m6, :y3m6cr)');
@@ -57,6 +56,7 @@
             </ul>
         </nav>
         <main>
+        <?php if(isset($_SESSION['logged'])){ ?>
             <div class="addmore">
                 <h3>Add A New Course Below</h3>    
                 <form action="editDeleteCourse.php" method="POST">
@@ -96,6 +96,14 @@
                 </form>
             
             </div>
+        <?php } 
+        else{ echo 'Please Login Click Here ---> '?> 
+            <form action="signinsignup.php" method="POST">
+                    <input type="submit" name="login" value="login Please" />  
+                </form>
+        <?php
+            }
+        ?> 
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
