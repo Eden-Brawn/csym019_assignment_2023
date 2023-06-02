@@ -20,6 +20,7 @@ session_start();
             <ul>
                 <li><a href="./courseSelectionForm.php">Course Report</a></li>
                 <li><a href="./newCourse.php">New Course</a></li>
+                <li><a href="./signout.php">Sign Out</a></li>
             </ul>
         </nav>
         <main>
