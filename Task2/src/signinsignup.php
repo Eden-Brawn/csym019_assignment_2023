@@ -1,4 +1,7 @@
+<?php
+    require 'mySql.php';
 
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,12 +15,24 @@
         </header>
         <nav>
             <ul>
-                <li><a href="./courseSelectionForm.php">Course Report</a></li>
-                <li><a href="./newCourse.php">New Course</a></li>
+                
             </ul>
         </nav>
         <main>
+            <h2>Please Sign IN:</h2>
+            <form action="signinsignup.php" method="POST">
+                <label>Admin name</label> <input type="text" name="usersname"/>
+                <label>Password</label> <input type="text" name="userpassword"/>
 
+                <input type="submit" name="signin" value="Submit" />
+            </form>
+            <h2>Please Sign Up:</h2>
+            <form action="signinsignup.php" method="POST">
+                <label>Admin name</label> <input type="text" name="usersname"/>
+                <label>Password</label> <input type="text" name="userpassword"/>
+
+                <input type="submit" name="signup" value="Submit" />
+            </form>
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
