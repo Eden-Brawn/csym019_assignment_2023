@@ -110,3 +110,7 @@ section .undertext{
     grid-area: duration;
     text-align: right;
 }
+img{
+    width: 1.5em;
+    height: auto;
+}
