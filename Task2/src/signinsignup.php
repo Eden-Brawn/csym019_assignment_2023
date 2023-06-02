@@ -10,7 +10,6 @@ session_start();
         $entry = $search->fetch();
         if (password_verify($_POST['pass'], $entry['admin_password'])) {/*As the password is hashed we will have to use a different method to compare them*/
             $_SESSION['logged'] = true; /*set the session*/
-            $_SESSION['user'] = $_POST['admin'];
             header("location:newCourse.php");
         }
         else{
@@ -23,7 +22,6 @@ session_start();
         $add = $pdo->prepare('INSERT INTO admins (admin_name, admin_password) /*sign up page so insert it into the database*/
                                 VALUES (:adminnew, :passnew)');
             $_SESSION['logged'] = true; /*sets sessions*/
-            $_SESSION['user'] = $_POST['adminnew'];
             $passwordhash = password_hash($_POST['passnew'], PASSWORD_DEFAULT);/*use the taught hash to encrypt the password*/
             $new = [
                 'adminnew' => $_POST['adminnew'],
