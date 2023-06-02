@@ -7,7 +7,8 @@
     <head>
         <title>Course Report</title>
         <link rel="stylesheet" href="layout.css">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script><!--https://www.chartjs.org/docs/latest/getting-started/-->
+        <!--https://www.chartjs.org/docs/latest/getting-started/-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="course.js"></script>
     </head>
     <body>
@@ -79,7 +80,7 @@
                 ?>
                 </div>
             </form>
-            <div id="cntlSize">
+            <div>
                 <canvas id="myChart" width="200" height="200"></canvas>
             </div>
         </main>

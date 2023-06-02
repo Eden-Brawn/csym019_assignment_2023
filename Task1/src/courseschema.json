@@ -10,6 +10,7 @@
                     "type": "object",
                     "properties": {
                         "id": {"type": "integer"},
+                        "image": {"type": "string"},
                         "course": {"type": "string"},
                         "ucascode": {"type": "string"},
                         "level": {"type": "string"},

@@ -1,7 +1,3 @@
-//$(document).ready(function(){
-//    $("#course").load("course.html");
-//});
-//REFERECE WHERE DATA CAME FROM
 window.onload = makeAjaxRequest;
 
 function makeAjaxRequest() {
@@ -155,15 +151,8 @@ function showContents() {
 
 setTimeout(() => { //Got this setimeout section from https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/
     window.location.reload();
-  }, 60000);
+  }, 600000);
 
-function convert() {
-    let con = "pounds";
-    if(con == "pounds"){
-        let val = document.getElementById("num").innerHTML;
-        val = val * 1.16;
-        document.getElementById("num").innerHTML = val;
-    }
-}  
+  
 document.getElementById("fees").addEventListener("click", convert);
   
