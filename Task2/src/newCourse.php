@@ -96,11 +96,14 @@
                 </form>
             
             </div>
+            
         <?php } 
-        else{ echo 'Please Login Click Here ---> '?> 
-            <form action="signinsignup.php" method="POST">
+        else{ echo '<p>Please Login Click Here: </p>'?> 
+            <div class="addmore">
+                <form action="signinsignup.php" method="POST">
                     <input type="submit" name="login" value="login Please" />  
                 </form>
+            </div>    
         <?php
             }
         ?> 

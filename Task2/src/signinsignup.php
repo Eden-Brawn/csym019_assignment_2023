@@ -49,20 +49,22 @@
             </ul>
         </nav>
         <main>
-            <h2>Please Sign IN:</h2>
-            <form action="signinsignup.php" method="POST">
-                <label>Admin name</label> <input type="text" name="admin"/>
-                <label>Password</label> <input type="text" name="pass"/>
+            <div class="addmore">
+                <h2>Please Sign IN:</h2>
+                <form action="signinsignup.php" method="POST">
+                    <label>Admin name</label> <input type="text" name="admin"/>
+                    <label>Password</label> <input type="text" name="pass"/>
 
-                <input type="submit" name="signin" value="Submit" />
-            </form>
-            <h2>Please Sign Up:</h2>
-            <form action="signinsignup.php" method="POST">
-                <label>Admin name</label> <input type="text" name="adminnew"/>
-                <label>Password</label> <input type="text" name="passnew"/>
+                    <input type="submit" name="signin" value="Submit" />
+                </form>
+                <h2>Please Sign Up:</h2>
+                <form action="signinsignup.php" method="POST">
+                    <label>Admin name</label> <input type="text" name="adminnew"/>
+                    <label>Password</label> <input type="text" name="passnew"/>
 
-                <input type="submit" name="signup" value="Submit" />
-            </form>
+                    <input type="submit" name="signup" value="Submit" />
+                </form>
+            </div>
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
