@@ -1,4 +1,5 @@
 <?php
+session_start();
     require 'mySql.php';
 ?>
 <!DOCTYPE html>

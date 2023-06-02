@@ -1,4 +1,5 @@
 <?php
+session_start();
     require 'mySql.php';
     if (isset($_POST['submitnew'])) {
         $stmt = $pdo->prepare('INSERT INTO course (course_title, course_ucas_code, course_level, course_start, location, course_description, course_satisfaction, duration_fulltime, duration_parttime, duration_foundation, uk_fees_fulltime, uk_fees_parttime, uk_fees_foundation, international_fees_fulltime, international_fees_foundation, work_placement, entry_grades_alevel, entry_grades_btec, entry_grades_tlevel, foundation_grades_alevel, foundation_grades_btec, foundation_grades_tlevel, language_requirements, year1_module1, y1_m1_credits, year1_module2, y1_m2_credits, year1_module3, y1_m3_credits, year1_module4, y1_m4_credits, year1_module5, y1_m5_credits, year1_module6, y1_m6_credits, year2_module1, y2_m1_credits, year2_module2, y2_m2_credits, year2_module3, y2_m3_credits, year2_module4, y2_m4_credits, year2_module5, y2_m5_credits, year2_module6, y2_m6_credits, year3_module1, y3_m1_credits, year3_module2, y3_m2_credits, year3_module3, y3_m3_credits, year3_module4, y3_m4_credits, year3_module5, y3_m5_credits, year3_module6, y3_m6_credits) 
