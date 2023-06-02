@@ -19,6 +19,7 @@
             </ul>
         </nav>
         <main>
+        <?php if(isset($_SESSION['logged'])){ ?>
 <?php
     if(isset($_POST['addcourse'])){
         echo'<div class="addmore">
@@ -111,6 +112,16 @@
         }
     }
 ?>
+<?php } 
+        else{ echo '<p>Please Login Click Here: </p>'?> 
+            <div class="addmore">
+                <form action="signinsignup.php" method="POST">
+                    <input type="submit" name="login" value="login Please" />  
+                </form>
+            </div>    
+        <?php
+            }
+        ?> 
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>

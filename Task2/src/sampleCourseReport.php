@@ -22,6 +22,7 @@
             </ul>
         </nav>
         <main>
+        <?php if(isset($_SESSION['logged'])){ ?>
             <h3>Sample Course Reoprt</h3>
             <div class="sketch">
                 
@@ -83,6 +84,16 @@
             <div>
                 <canvas id="myChart" width="200" height="200"></canvas>
             </div>
+            <?php } 
+        else{ echo '<p>Please Login Click Here: </p>'?> 
+            <div class="addmore">
+                <form action="signinsignup.php" method="POST">
+                    <input type="submit" name="login" value="login Please" />  
+                </form>
+            </div>    
+        <?php
+            }
+        ?> 
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>

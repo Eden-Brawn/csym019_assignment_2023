@@ -19,6 +19,7 @@
             </ul>
         </nav>
         <main>
+        <?php if(isset($_SESSION['logged'])){ ?>
             <h3>Sample Course Selection Form</h3>
             <form action="sampleCourseReport.php" method="post">
                 <div class="container">    
@@ -99,12 +100,19 @@
                     echo '</table>';
                 ?>
                 </div>
-                    <p class="note">The sketch above provides a sample table for selecting the courses to include in the report. Once the courses have been selected from the table, the report can be created by clicking the button below.</p>
-                    <p class="blueNote">You can click of the button below to view a sketch of the report you are expected to develop.</p>
                     <input type="submit" value="Create Course Report" />
                     <!--input type="reset" value="Cancel" /-->                
             </form>
-            
+            <?php } 
+        else{ echo '<p>Please Login Click Here: </p>'?> 
+            <div class="addmore">
+                <form action="signinsignup.php" method="POST">
+                    <input type="submit" name="login" value="login Please" />  
+                </form>
+            </div>    
+        <?php
+            }
+        ?> 
         </main>
         <footer>&copy; CSYM019 2023</footer>
     </body>
